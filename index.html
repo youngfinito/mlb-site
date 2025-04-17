@@ -22,6 +22,13 @@
             margin-top: -10px;
             margin-bottom: 20px;
         }
+        a {
+            text-decoration: none;
+            color: #007bff;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
         table {
             width: 100%;
             border-collapse: collapse;
@@ -55,24 +62,18 @@
             color: #6c757d;
         }
     </style>
-    <script>
-        function toggleSection(id, btnId, showText, hideText) {
-            var section = document.getElementById(id);
-            var btn = document.getElementById(btnId);
-            if (section.style.display === "none") {
-                section.style.display = "block";
-                btn.innerText = hideText;
-            } else {
-                section.style.display = "none";
-                btn.innerText = showText;
-            }
-        }
-    </script>
 </head>
 <body>
-    <div style="text-align:center; margin-bottom: 20px;">
-        <img src="https://www.mlbstatic.com/team-logos/league-on-dark/1.svg" alt="MLB Logo" style="height: 60px;">
-    </div>
+
+<div style="text-align:center; margin-bottom: 30px;">
+    <a href="index.html" style="margin: 0 20px; font-weight: bold;">Matchups</a>
+    <a href="nrfi_predictions_with_runs.html" style="margin: 0 20px; font-weight: bold;">NRFI Predictions</a>
+</div>
+
+<div style="text-align:center; margin-bottom: 20px;">
+    <img src="https://www.mlbstatic.com/team-logos/league-on-dark/1.svg" alt="MLB Logo" style="height: 60px;">
+</div>
+
 
     <h1>Batter vs Pitcher Matchups</h1>
     <style type="text/css">
