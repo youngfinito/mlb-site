@@ -2294,5 +2294,21 @@
     </div>
 
     <footer>&copy; 2025 MLB Data Analysis | donsMLBPlayground</footer>
+
+<script>
+function toggleSection(sectionId, buttonId, showText = "See More", hideText = "See Less") {
+    const section = document.getElementById(sectionId);
+    const button = document.getElementById(buttonId);
+
+    if (section.style.display === "none" || section.style.display === "") {
+        section.style.display = "block";
+        if (button) button.innerText = hideText;
+    } else {
+        section.style.display = "none";
+        if (button) button.innerText = showText;
+    }
+}
+</script>
 </body>
 </html>
+
