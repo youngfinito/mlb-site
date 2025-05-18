@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>BI Dashboard</title>
+    <style>
+        body { font-family: sans-serif; }
+        table { border-collapse: collapse; width: 100%; }
+        th, td { padding: 8px; text-align: left; border-bottom: 1px solid #ddd; }
+        tr:hover { background-color: #f5f5f5; }
+        a { text-decoration: none; color: #007bff; font-weight: bold; }
+        a:hover { text-decoration: underline; }
+        .iframe-container { display: flex; justify-content: center; margin: 40px 0; }
+    </style>
+</head>
+<body>
+
+<!-- Logo -->
+<div style="text-align:center; margin-bottom: 20px;">
+    <img src="https://www.mlbstatic.com/team-logos/league-on-dark/1.svg" alt="MLB Logo" style="height: 60px;">
+</div>
+
+<!-- Navigation Bar -->
+<div style="text-align:center; margin-bottom: 30px;">
+    <a href="index.html">Matchups</a> |
+    <a href="nrfi.html">NRFI Predictions</a> |
+    <a href="pitchers.html">Pitchers</a> |
+    <a href="slate.html">Today's Slate</a> |
+    <a href="bi.html">BI</a> |
+    <a href="about.html">About</a>
+</div>
+
+<!-- BI Page Content -->
+<h1 style="text-align:center;">donMLBPlayground - Public Power BI Report</h1>
+<div class="iframe-container">
+    <iframe title="donMLBPlaygorund" width="600" height="373.5"
+            src="https://app.powerbi.com/view?r=eyJrIjoiN2VkYmRkMTQtMDU1MS00NzE3LTk0Y2QtZmNlMjdkMzUxZmE1IiwidCI6IjQwZmIxY2E3LWYwMTMtNDRhNC1hZWRjLTM1NDk0NGZiN2Y0ZiIsImMiOjF9"
+            allowFullScreen="true">
+    </iframe>
+</div>
+
+<!-- Footer -->
+<div style="text-align:center; margin-top: 40px; font-size: 12px;">
+    &copy; 2025 MLB Data Analysis | donsMLBPlayground
+</div>
+
+</body>
+</html>
