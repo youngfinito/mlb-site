@@ -36,7 +36,7 @@ a:hover { text-decoration: underline; }
 }
 </style>
 <script>
-const lineups = {'Colorado Rockies_Miami Marlins': "<div class='matchup-lineup'><div class='lineup-header'><img src='https://www.mlbstatic.com/team-logos/115.svg' height='30px' style='vertical-align:middle;'> Colorado Rockies</div><table class='lineup-table'><thead><tr><th>#</th><th>Batter</th><th>Hand</th></tr></thead><tbody><tr><td>1</td><td>Jordan Beck</td><td>R</td></tr><tr><td>2</td><td>Ezequiel Tovar</td><td>R</td></tr><tr><td>3</td><td>Hunter Goodman</td><td>R</td></tr><tr><td>4</td><td>Ryan McMahon</td><td>L</td></tr><tr><td>5</td><td>Thairo Estrada</td><td>R</td></tr><tr><td>6</td><td>Brenton Doyle</td><td>R</td></tr><tr><td>7</td><td>Sam Hilliard</td><td>L</td></tr><tr><td>8</td><td>Kyle Farmer</td><td>R</td></tr><tr><td>9</td><td>Mickey Moniak</td><td>L</td></tr></tbody></table><div class='vs-large'>VS</div><div class='lineup-header'><img src='https://www.mlbstatic.com/team-logos/146.svg' height='30px' style='vertical-align:middle;'> Miami Marlins</div><table class='lineup-table'><thead><tr><th>#</th><th>Batter</th><th>Hand</th></tr></thead><tbody><tr><td>1</td><td>Xavier Edwards</td><td>S</td></tr><tr><td>2</td><td>Jesus Sanchez</td><td>L</td></tr><tr><td>3</td><td>Otto Lopez</td><td>R</td></tr><tr><td>4</td><td>A. Ramirez</td><td>R</td></tr><tr><td>5</td><td>Kyle Stowers</td><td>L</td></tr><tr><td>6</td><td>Eric Wagaman</td><td>R</td></tr><tr><td>7</td><td>Dane Myers</td><td>R</td></tr><tr><td>8</td><td>Connor Norby</td><td>R</td></tr><tr><td>9</td><td>Liam Hicks</td><td>L</td></tr></tbody></table></div>", 'Los Angeles Angels_Boston Red Sox': "<div class='matchup-lineup'><div class='lineup-header'><img src='https://www.mlbstatic.com/team-logos/108.svg' height='30px' style='vertical-align:middle;'> Los Angeles Angels</div><table class='lineup-table'><thead><tr><th>#</th><th>Batter</th><th>Hand</th></tr></thead><tbody><tr><td>1</td><td>Zach Neto</td><td>R</td></tr><tr><td>2</td><td>Nolan Schanuel</td><td>L</td></tr><tr><td>3</td><td>Yoan Moncada</td><td>S</td></tr><tr><td>4</td><td>Taylor Ward</td><td>R</td></tr><tr><td>5</td><td>Jorge Soler</td><td>R</td></tr><tr><td>6</td><td>Mike Trout</td><td>R</td></tr><tr><td>7</td><td>Logan O'Hoppe</td><td>R</td></tr><tr><td>8</td><td>Jo Adell</td><td>R</td></tr><tr><td>9</td><td>Luis Rengifo</td><td>S</td></tr></tbody></table><div class='vs-large'>VS</div><div class='lineup-header'><img src='https://www.mlbstatic.com/team-logos/111.svg' height='30px' style='vertical-align:middle;'> Boston Red Sox</div><table class='lineup-table'><thead><tr><th>#</th><th>Batter</th><th>Hand</th></tr></thead><tbody><tr><td>1</td><td>Jarren Duran</td><td>L</td></tr><tr><td>2</td><td>Rafael Devers</td><td>L</td></tr><tr><td>3</td><td>Rob Refsnyder</td><td>R</td></tr><tr><td>4</td><td>K. Campbell</td><td>R</td></tr><tr><td>5</td><td>Trevor Story</td><td>R</td></tr><tr><td>6</td><td>Abraham Toro</td><td>S</td></tr><tr><td>7</td><td>M. Mayer</td><td>L</td></tr><tr><td>8</td><td>Connor Wong</td><td>R</td></tr><tr><td>9</td><td>Ceddanne Rafaela</td><td>R</td></tr></tbody></table></div>", 'Milwaukee Brewers_Cincinnati Reds': "<div class='matchup-lineup'><div class='lineup-header'><img src='https://www.mlbstatic.com/team-logos/158.svg' height='30px' style='vertical-align:middle;'> Milwaukee Brewers</div><table class='lineup-table'><thead><tr><th>#</th><th>Batter</th><th>Hand</th></tr></thead><tbody><tr><td>1</td><td>Brice Turang</td><td>L</td></tr><tr><td>2</td><td>Jackson Chourio</td><td>R</td></tr><tr><td>3</td><td>Willson Contreras</td><td>R</td></tr><tr><td>4</td><td>Christian Yelich</td><td>L</td></tr><tr><td>5</td><td>Rhys Hoskins</td><td>R</td></tr><tr><td>6</td><td>Isaac Collins</td><td>S</td></tr><tr><td>7</td><td>Sal Frelick</td><td>L</td></tr><tr><td>8</td><td>Caleb Durbin</td><td>R</td></tr><tr><td>9</td><td>Joey Ortiz</td><td>R</td></tr></tbody></table><div class='vs-large'>VS</div><div class='lineup-header'><img src='https://www.mlbstatic.com/team-logos/113.svg' height='30px' style='vertical-align:middle;'> Cincinnati Reds</div><table class='lineup-table'><thead><tr><th>#</th><th>Batter</th><th>Hand</th></tr></thead><tbody><tr><td>1</td><td>TJ Friedl</td><td>L</td></tr><tr><td>2</td><td>Santiago Espinal</td><td>R</td></tr><tr><td>3</td><td>Elly De La Cruz</td><td>S</td></tr><tr><td>4</td><td>Gavin Lux</td><td>L</td></tr><tr><td>5</td><td>Tyler Stephenson</td><td>R</td></tr><tr><td>6</td><td>Will Benson</td><td>L</td></tr><tr><td>7</td><td>Spencer Steer</td><td>R</td></tr><tr><td>8</td><td>Jake Fraley</td><td>L</td></tr><tr><td>9</td><td>Matt McLain</td><td>R</td></tr></tbody></table></div>", 'Detroit Tigers_Chicago White Sox': "<div class='matchup-lineup'><div class='lineup-header'><img src='https://www.mlbstatic.com/team-logos/116.svg' height='30px' style='vertical-align:middle;'> Detroit Tigers</div><table class='lineup-table'><thead><tr><th>#</th><th>Batter</th><th>Hand</th></tr></thead><tbody><tr><td>1</td><td>Kerry Carpenter</td><td>L</td></tr><tr><td>2</td><td>Gleyber Torres</td><td>R</td></tr><tr><td>3</td><td>Colt Keith</td><td>L</td></tr><tr><td>4</td><td>Riley Greene</td><td>L</td></tr><tr><td>5</td><td>Spencer Torkelson</td><td>R</td></tr><tr><td>6</td><td>Wenceel Perez</td><td>S</td></tr><tr><td>7</td><td>Zach McKinstry</td><td>L</td></tr><tr><td>8</td><td>Dillon Dingler</td><td>R</td></tr><tr><td>9</td><td>Trey Sweeney</td><td>L</td></tr></tbody></table><div class='vs-large'>VS</div><div class='lineup-header'><img src='https://www.mlbstatic.com/team-logos/145.svg' height='30px' style='vertical-align:middle;'> Chicago White Sox</div><table class='lineup-table'><thead><tr><th>#</th><th>Batter</th><th>Hand</th></tr></thead><tbody><tr><td>1</td><td>C. Meidroth</td><td>R</td></tr><tr><td>2</td><td>Mike Tauchman</td><td>L</td></tr><tr><td>3</td><td>Miguel Vargas</td><td>R</td></tr><tr><td>4</td><td>Andrew Benintendi</td><td>L</td></tr><tr><td>5</td><td>Lenyn Sosa</td><td>R</td></tr><tr><td>6</td><td>Joshua Palacios</td><td>L</td></tr><tr><td>7</td><td>Luis Robert</td><td>R</td></tr><tr><td>8</td><td>Edgar Quero</td><td>S</td></tr><tr><td>9</td><td>Josh Rojas</td><td>L</td></tr></tbody></table></div>", 'San Diego Padres_San Francisco Giants': "<div class='matchup-lineup'><div class='lineup-header'><img src='https://www.mlbstatic.com/team-logos/135.svg' height='30px' style='vertical-align:middle;'> San Diego Padres</div><table class='lineup-table'><thead><tr><th>#</th><th>Batter</th><th>Hand</th></tr></thead><tbody><tr><td>1</td><td>Fernando Tatis Jr.</td><td>R</td></tr><tr><td>2</td><td>Luis Arraez</td><td>L</td></tr><tr><td>3</td><td>Manny Machado</td><td>R</td></tr><tr><td>4</td><td>Jackson Merrill</td><td>L</td></tr><tr><td>5</td><td>Gavin Sheets</td><td>L</td></tr><tr><td>6</td><td>Xander Bogaerts</td><td>R</td></tr><tr><td>7</td><td>Jake Cronenworth</td><td>L</td></tr><tr><td>8</td><td>Tyler Wade</td><td>L</td></tr><tr><td>9</td><td>Elias Diaz</td><td>R</td></tr></tbody></table><div class='vs-large'>VS</div><div class='lineup-header'><img src='https://www.mlbstatic.com/team-logos/137.svg' height='30px' style='vertical-align:middle;'> San Francisco Giants</div><table class='lineup-table'><thead><tr><th>#</th><th>Batter</th><th>Hand</th></tr></thead><tbody><tr><td>1</td><td>Mike Yastrzemski</td><td>L</td></tr><tr><td>2</td><td>Heliot Ramos</td><td>R</td></tr><tr><td>3</td><td>Jung Hoo Lee</td><td>L</td></tr><tr><td>4</td><td>Wilmer Flores</td><td>R</td></tr><tr><td>5</td><td>Matt Chapman</td><td>R</td></tr><tr><td>6</td><td>Willy Adames</td><td>R</td></tr><tr><td>7</td><td>LaMonte Wade</td><td>L</td></tr><tr><td>8</td><td>Patrick Bailey</td><td>S</td></tr><tr><td>9</td><td>Tyler Fitzgerald</td><td>R</td></tr></tbody></table></div>", 'Minnesota Twins_Oakland Athletics': "<div class='matchup-lineup'><div class='lineup-header'><img src='https://www.mlbstatic.com/team-logos/142.svg' height='30px' style='vertical-align:middle;'> Minnesota Twins</div><table class='lineup-table'><thead><tr><th>#</th><th>Batter</th><th>Hand</th></tr></thead><tbody><tr><td>1</td><td>Byron Buxton</td><td>R</td></tr><tr><td>2</td><td>Trevor Larnach</td><td>L</td></tr><tr><td>3</td><td>Ryan Jeffers</td><td>R</td></tr><tr><td>4</td><td>Carlos Correa</td><td>R</td></tr><tr><td>5</td><td>Matt Wallner</td><td>L</td></tr><tr><td>6</td><td>Willi Castro</td><td>S</td></tr><tr><td>7</td><td>Ty France</td><td>R</td></tr><tr><td>8</td><td>Harrison Bader</td><td>R</td></tr><tr><td>9</td><td>Royce Lewis</td><td>R</td></tr></tbody></table><div class='vs-large'>VS</div><div class='lineup-header'><img src='https://www.mlbstatic.com/team-logos/133.svg' height='30px' style='vertical-align:middle;'> Oakland Athletics</div><table class='lineup-table'><thead><tr><th>#</th><th>Batter</th><th>Hand</th></tr></thead><tbody><tr><td>1</td><td>Lawrence Butler</td><td>L</td></tr><tr><td>2</td><td>Jacob Wilson</td><td>R</td></tr><tr><td>3</td><td>Brent Rooker</td><td>R</td></tr><tr><td>4</td><td>Tyler Soderstrom</td><td>L</td></tr><tr><td>5</td><td>Shea Langeliers</td><td>R</td></tr><tr><td>6</td><td>Luis Urias</td><td>R</td></tr><tr><td>7</td><td>CJ Alexander</td><td>L</td></tr><tr><td>8</td><td>Drew Avans</td><td>L</td></tr><tr><td>9</td><td>D. Clarke</td><td>R</td></tr></tbody></table></div>", 'New York Mets_Los Angeles Dodgers': "<div class='matchup-lineup'><div class='lineup-header'><img src='https://www.mlbstatic.com/team-logos/121.svg' height='30px' style='vertical-align:middle;'> New York Mets</div><table class='lineup-table'><thead><tr><th>#</th><th>Batter</th><th>Hand</th></tr></thead><tbody><tr><td>1</td><td>Francisco Lindor</td><td>S</td></tr><tr><td>2</td><td>Brandon Nimmo</td><td>L</td></tr><tr><td>3</td><td>Juan Soto</td><td>L</td></tr><tr><td>4</td><td>Pete Alonso</td><td>R</td></tr><tr><td>5</td><td>Brett Baty</td><td>L</td></tr><tr><td>6</td><td>Jared Young</td><td>L</td></tr><tr><td>7</td><td>Tyrone Taylor</td><td>R</td></tr><tr><td>8</td><td>Jeff McNeil</td><td>L</td></tr><tr><td>9</td><td>Francisco Alvarez</td><td>R</td></tr></tbody></table><div class='vs-large'>VS</div><div class='lineup-header'><img src='https://www.mlbstatic.com/team-logos/119.svg' height='30px' style='vertical-align:middle;'> Los Angeles Dodgers</div><table class='lineup-table'><thead><tr><th>#</th><th>Batter</th><th>Hand</th></tr></thead><tbody><tr><td>1</td><td>Shohei Ohtani</td><td>L</td></tr><tr><td>2</td><td>Mookie Betts</td><td>R</td></tr><tr><td>3</td><td>Freddie Freeman</td><td>L</td></tr><tr><td>4</td><td>Will Smith</td><td>R</td></tr><tr><td>5</td><td>Teoscar Hernandez</td><td>R</td></tr><tr><td>6</td><td>Max Muncy</td><td>L</td></tr><tr><td>7</td><td>Andy Pages</td><td>R</td></tr><tr><td>8</td><td>Michael Conforto</td><td>L</td></tr><tr><td>9</td><td>Tommy Edman</td><td>S</td></tr></tbody></table></div>"};
+const lineups = {'Colorado Rockies_Miami Marlins': "<div class='matchup-lineup'><div class='lineup-header'><img src='https://www.mlbstatic.com/team-logos/115.svg' height='30px' style='vertical-align:middle;'> Colorado Rockies</div><table class='lineup-table'><thead><tr><th>#</th><th>Batter</th><th>Hand</th></tr></thead><tbody><tr><td>1</td><td>Sam Hilliard</td><td>L</td></tr><tr><td>2</td><td>Ezequiel Tovar</td><td>R</td></tr><tr><td>3</td><td>Hunter Goodman</td><td>R</td></tr><tr><td>4</td><td>Thairo Estrada</td><td>R</td></tr><tr><td>5</td><td>Ryan McMahon</td><td>L</td></tr><tr><td>6</td><td>Brenton Doyle</td><td>R</td></tr><tr><td>7</td><td>Orlando Arcia</td><td>R</td></tr><tr><td>8</td><td>Keston Hiura</td><td>R</td></tr><tr><td>9</td><td>Tyler Freeman</td><td>R</td></tr></tbody></table><div class='vs-large'>VS</div><div class='lineup-header'><img src='https://www.mlbstatic.com/team-logos/146.svg' height='30px' style='vertical-align:middle;'> Miami Marlins</div><table class='lineup-table'><thead><tr><th>#</th><th>Batter</th><th>Hand</th></tr></thead><tbody><tr><td>1</td><td>Xavier Edwards</td><td>S</td></tr><tr><td>2</td><td>Jesus Sanchez</td><td>L</td></tr><tr><td>3</td><td>A. Ramirez</td><td>R</td></tr><tr><td>4</td><td>Kyle Stowers</td><td>L</td></tr><tr><td>5</td><td>Otto Lopez</td><td>R</td></tr><tr><td>6</td><td>Eric Wagaman</td><td>R</td></tr><tr><td>7</td><td>Connor Norby</td><td>R</td></tr><tr><td>8</td><td>Liam Hicks</td><td>L</td></tr><tr><td>9</td><td>Dane Myers</td><td>R</td></tr></tbody></table></div>", 'Los Angeles Angels_Boston Red Sox': "<div class='matchup-lineup'><div class='lineup-header'><img src='https://www.mlbstatic.com/team-logos/108.svg' height='30px' style='vertical-align:middle;'> Los Angeles Angels</div><table class='lineup-table'><thead><tr><th>#</th><th>Batter</th><th>Hand</th></tr></thead><tbody><tr><td>1</td><td>Zach Neto</td><td>R</td></tr><tr><td>2</td><td>Nolan Schanuel</td><td>L</td></tr><tr><td>3</td><td>Taylor Ward</td><td>R</td></tr><tr><td>4</td><td>Jorge Soler</td><td>R</td></tr><tr><td>5</td><td>Mike Trout</td><td>R</td></tr><tr><td>6</td><td>Logan O'Hoppe</td><td>R</td></tr><tr><td>7</td><td>Jo Adell</td><td>R</td></tr><tr><td>8</td><td>Luis Rengifo</td><td>S</td></tr><tr><td>9</td><td>S. Kingery</td><td>R</td></tr></tbody></table><div class='vs-large'>VS</div><div class='lineup-header'><img src='https://www.mlbstatic.com/team-logos/111.svg' height='30px' style='vertical-align:middle;'> Boston Red Sox</div><table class='lineup-table'><thead><tr><th>#</th><th>Batter</th><th>Hand</th></tr></thead><tbody><tr><td>1</td><td>Jarren Duran</td><td>L</td></tr><tr><td>2</td><td>Rafael Devers</td><td>L</td></tr><tr><td>3</td><td>Rob Refsnyder</td><td>R</td></tr><tr><td>4</td><td>Carlos Narvaez</td><td>R</td></tr><tr><td>5</td><td>Romy Gonzalez</td><td>R</td></tr><tr><td>6</td><td>Abraham Toro</td><td>S</td></tr><tr><td>7</td><td>Trevor Story</td><td>R</td></tr><tr><td>8</td><td>Ceddanne Rafaela</td><td>R</td></tr><tr><td>9</td><td>K. Campbell</td><td>R</td></tr></tbody></table></div>", 'Milwaukee Brewers_Cincinnati Reds': "<div class='matchup-lineup'><div class='lineup-header'><img src='https://www.mlbstatic.com/team-logos/158.svg' height='30px' style='vertical-align:middle;'> Milwaukee Brewers</div><table class='lineup-table'><thead><tr><th>#</th><th>Batter</th><th>Hand</th></tr></thead><tbody><tr><td>1</td><td>Brice Turang</td><td>L</td></tr><tr><td>2</td><td>Jackson Chourio</td><td>R</td></tr><tr><td>3</td><td>Willson Contreras</td><td>R</td></tr><tr><td>4</td><td>Christian Yelich</td><td>L</td></tr><tr><td>5</td><td>Rhys Hoskins</td><td>R</td></tr><tr><td>6</td><td>Sal Frelick</td><td>L</td></tr><tr><td>7</td><td>Andruw Monasterio</td><td>R</td></tr><tr><td>8</td><td>Jake Bauers</td><td>L</td></tr><tr><td>9</td><td>Joey Ortiz</td><td>R</td></tr></tbody></table><div class='vs-large'>VS</div><div class='lineup-header'><img src='https://www.mlbstatic.com/team-logos/113.svg' height='30px' style='vertical-align:middle;'> Cincinnati Reds</div><table class='lineup-table'><thead><tr><th>#</th><th>Batter</th><th>Hand</th></tr></thead><tbody><tr><td>1</td><td>TJ Friedl</td><td>L</td></tr><tr><td>2</td><td>Gavin Lux</td><td>L</td></tr><tr><td>3</td><td>Elly De La Cruz</td><td>S</td></tr><tr><td>4</td><td>Tyler Stephenson</td><td>R</td></tr><tr><td>5</td><td>Spencer Steer</td><td>R</td></tr><tr><td>6</td><td>Will Benson</td><td>L</td></tr><tr><td>7</td><td>Jose Trevino</td><td>R</td></tr><tr><td>8</td><td>Jake Fraley</td><td>L</td></tr><tr><td>9</td><td>Garrett Hampson</td><td>R</td></tr></tbody></table></div>", 'Detroit Tigers_Chicago White Sox': "<div class='matchup-lineup'><div class='lineup-header'><img src='https://www.mlbstatic.com/team-logos/116.svg' height='30px' style='vertical-align:middle;'> Detroit Tigers</div><table class='lineup-table'><thead><tr><th>#</th><th>Batter</th><th>Hand</th></tr></thead><tbody><tr><td>1</td><td>Parker Meadows</td><td>L</td></tr><tr><td>2</td><td>Gleyber Torres</td><td>R</td></tr><tr><td>3</td><td>Kerry Carpenter</td><td>L</td></tr><tr><td>4</td><td>Riley Greene</td><td>L</td></tr><tr><td>5</td><td>Dillon Dingler</td><td>R</td></tr><tr><td>6</td><td>Colt Keith</td><td>L</td></tr><tr><td>7</td><td>Zach McKinstry</td><td>L</td></tr><tr><td>8</td><td>Wenceel Perez</td><td>S</td></tr><tr><td>9</td><td>Javier Baez</td><td>R</td></tr></tbody></table><div class='vs-large'>VS</div><div class='lineup-header'><img src='https://www.mlbstatic.com/team-logos/145.svg' height='30px' style='vertical-align:middle;'> Chicago White Sox</div><table class='lineup-table'><thead><tr><th>#</th><th>Batter</th><th>Hand</th></tr></thead><tbody><tr><td>1</td><td>C. Meidroth</td><td>R</td></tr><tr><td>2</td><td>Mike Tauchman</td><td>L</td></tr><tr><td>3</td><td>Miguel Vargas</td><td>R</td></tr><tr><td>4</td><td>Andrew Benintendi</td><td>L</td></tr><tr><td>5</td><td>Lenyn Sosa</td><td>R</td></tr><tr><td>6</td><td>Joshua Palacios</td><td>L</td></tr><tr><td>7</td><td>Luis Robert</td><td>R</td></tr><tr><td>8</td><td>Josh Rojas</td><td>L</td></tr><tr><td>9</td><td>Korey Lee</td><td>R</td></tr></tbody></table></div>", 'San Diego Padres_San Francisco Giants': "<div class='matchup-lineup'><div class='lineup-header'><img src='https://www.mlbstatic.com/team-logos/135.svg' height='30px' style='vertical-align:middle;'> San Diego Padres</div><table class='lineup-table'><thead><tr><th>#</th><th>Batter</th><th>Hand</th></tr></thead><tbody><tr><td>1</td><td>Fernando Tatis Jr.</td><td>R</td></tr><tr><td>2</td><td>Luis Arraez</td><td>L</td></tr><tr><td>3</td><td>Manny Machado</td><td>R</td></tr><tr><td>4</td><td>Jackson Merrill</td><td>L</td></tr><tr><td>5</td><td>Xander Bogaerts</td><td>R</td></tr><tr><td>6</td><td>Jake Cronenworth</td><td>L</td></tr><tr><td>7</td><td>Tyler Wade</td><td>L</td></tr><tr><td>8</td><td>Jose Iglesias</td><td>R</td></tr><tr><td>9</td><td>Elias Diaz</td><td>R</td></tr></tbody></table><div class='vs-large'>VS</div><div class='lineup-header'><img src='https://www.mlbstatic.com/team-logos/137.svg' height='30px' style='vertical-align:middle;'> San Francisco Giants</div><table class='lineup-table'><thead><tr><th>#</th><th>Batter</th><th>Hand</th></tr></thead><tbody><tr><td>1</td><td>Heliot Ramos</td><td>R</td></tr><tr><td>2</td><td>Jung Hoo Lee</td><td>L</td></tr><tr><td>3</td><td>Wilmer Flores</td><td>R</td></tr><tr><td>4</td><td>Matt Chapman</td><td>R</td></tr><tr><td>5</td><td>Mike Yastrzemski</td><td>L</td></tr><tr><td>6</td><td>Willy Adames</td><td>R</td></tr><tr><td>7</td><td>LaMonte Wade</td><td>L</td></tr><tr><td>8</td><td>Patrick Bailey</td><td>S</td></tr><tr><td>9</td><td>Tyler Fitzgerald</td><td>R</td></tr></tbody></table></div>", 'Minnesota Twins_Oakland Athletics': "<div class='matchup-lineup'><div class='lineup-header'><img src='https://www.mlbstatic.com/team-logos/142.svg' height='30px' style='vertical-align:middle;'> Minnesota Twins</div><table class='lineup-table'><thead><tr><th>#</th><th>Batter</th><th>Hand</th></tr></thead><tbody><tr><td>1</td><td>Byron Buxton</td><td>R</td></tr><tr><td>2</td><td>Trevor Larnach</td><td>L</td></tr><tr><td>3</td><td>Brooks Lee</td><td>S</td></tr><tr><td>4</td><td>Matt Wallner</td><td>L</td></tr><tr><td>5</td><td>Carlos Correa</td><td>R</td></tr><tr><td>6</td><td>Willi Castro</td><td>S</td></tr><tr><td>7</td><td>Kody Clemens</td><td>L</td></tr><tr><td>8</td><td>Ty France</td><td>R</td></tr><tr><td>9</td><td>Christian Vazquez</td><td>R</td></tr></tbody></table><div class='vs-large'>VS</div><div class='lineup-header'><img src='https://www.mlbstatic.com/team-logos/133.svg' height='30px' style='vertical-align:middle;'> Oakland Athletics</div><table class='lineup-table'><thead><tr><th>#</th><th>Batter</th><th>Hand</th></tr></thead><tbody><tr><td>1</td><td>Lawrence Butler</td><td>L</td></tr><tr><td>2</td><td>Jacob Wilson</td><td>R</td></tr><tr><td>3</td><td>Brent Rooker</td><td>R</td></tr><tr><td>4</td><td>Tyler Soderstrom</td><td>L</td></tr><tr><td>5</td><td>Shea Langeliers</td><td>R</td></tr><tr><td>6</td><td>CJ Alexander</td><td>L</td></tr><tr><td>7</td><td>Luis Urias</td><td>R</td></tr><tr><td>8</td><td>Drew Avans</td><td>L</td></tr><tr><td>9</td><td>D. Clarke</td><td>R</td></tr></tbody></table></div>", 'New York Mets_Los Angeles Dodgers': "<div class='matchup-lineup'><div class='lineup-header'><img src='https://www.mlbstatic.com/team-logos/121.svg' height='30px' style='vertical-align:middle;'> New York Mets</div><table class='lineup-table'><thead><tr><th>#</th><th>Batter</th><th>Hand</th></tr></thead><tbody><tr><td>1</td><td>Francisco Lindor</td><td>S</td></tr><tr><td>2</td><td>Brandon Nimmo</td><td>L</td></tr><tr><td>3</td><td>Juan Soto</td><td>L</td></tr><tr><td>4</td><td>Pete Alonso</td><td>R</td></tr><tr><td>5</td><td>Jared Young</td><td>L</td></tr><tr><td>6</td><td>Brett Baty</td><td>L</td></tr><tr><td>7</td><td>Tyrone Taylor</td><td>R</td></tr><tr><td>8</td><td>Jeff McNeil</td><td>L</td></tr><tr><td>9</td><td>Francisco Alvarez</td><td>R</td></tr></tbody></table><div class='vs-large'>VS</div><div class='lineup-header'><img src='https://www.mlbstatic.com/team-logos/119.svg' height='30px' style='vertical-align:middle;'> Los Angeles Dodgers</div><table class='lineup-table'><thead><tr><th>#</th><th>Batter</th><th>Hand</th></tr></thead><tbody><tr><td>1</td><td>Shohei Ohtani</td><td>L</td></tr><tr><td>2</td><td>Teoscar Hernandez</td><td>R</td></tr><tr><td>3</td><td>Freddie Freeman</td><td>L</td></tr><tr><td>4</td><td>Andy Pages</td><td>R</td></tr><tr><td>5</td><td>Max Muncy</td><td>L</td></tr><tr><td>6</td><td>Michael Conforto</td><td>L</td></tr><tr><td>7</td><td>Tommy Edman</td><td>S</td></tr><tr><td>8</td><td>D. Rushing</td><td>L</td></tr><tr><td>9</td><td>Hyeseong Kim</td><td>L</td></tr></tbody></table></div>"};
 function showMatchup(away, home) {
     const key = `${away}_${home}`;
     document.getElementById('lineup-display').innerHTML = lineups[key] || "<p>No lineup data.</p>";
@@ -59,57 +59,57 @@ function showMatchup(away, home) {
 <h1 style='text-align:center;'>The Slate</h1>
 <style type="text/css">
 </style>
-<table id="T_b3150">
+<table id="T_101ec">
   <thead>
     <tr>
-      <th id="T_b3150_level0_col0" class="col_heading level0 col0" >Game Time</th>
-      <th id="T_b3150_level0_col1" class="col_heading level0 col1" >Venue</th>
-      <th id="T_b3150_level0_col2" class="col_heading level0 col2" >Away Team</th>
-      <th id="T_b3150_level0_col3" class="col_heading level0 col3" >Home Team</th>
+      <th id="T_101ec_level0_col0" class="col_heading level0 col0" >Game Time</th>
+      <th id="T_101ec_level0_col1" class="col_heading level0 col1" >Venue</th>
+      <th id="T_101ec_level0_col2" class="col_heading level0 col2" >Away Team</th>
+      <th id="T_101ec_level0_col3" class="col_heading level0 col3" >Home Team</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td id="T_b3150_row0_col0" class="data row0 col0" >6:40 PM ET</td>
-      <td id="T_b3150_row0_col1" class="data row0 col1" >loanDepot park</td>
-      <td id="T_b3150_row0_col2" class="data row0 col2" ><img src='https://www.mlbstatic.com/team-logos/115.svg' height='30px' style='vertical-align:middle;'> Colorado Rockies</td>
-      <td id="T_b3150_row0_col3" class="data row0 col3" ><img src='https://www.mlbstatic.com/team-logos/146.svg' height='30px' style='vertical-align:middle;'> Miami Marlins</td>
+      <td id="T_101ec_row0_col0" class="data row0 col0" >6:40 PM ET</td>
+      <td id="T_101ec_row0_col1" class="data row0 col1" >loanDepot park</td>
+      <td id="T_101ec_row0_col2" class="data row0 col2" ><img src='https://www.mlbstatic.com/team-logos/115.svg' height='30px' style='vertical-align:middle;'> Colorado Rockies</td>
+      <td id="T_101ec_row0_col3" class="data row0 col3" ><img src='https://www.mlbstatic.com/team-logos/146.svg' height='30px' style='vertical-align:middle;'> Miami Marlins</td>
     </tr>
     <tr>
-      <td id="T_b3150_row1_col0" class="data row1 col0" >7:10 PM ET</td>
-      <td id="T_b3150_row1_col1" class="data row1 col1" >Fenway Park</td>
-      <td id="T_b3150_row1_col2" class="data row1 col2" ><img src='https://www.mlbstatic.com/team-logos/108.svg' height='30px' style='vertical-align:middle;'> Los Angeles Angels</td>
-      <td id="T_b3150_row1_col3" class="data row1 col3" ><img src='https://www.mlbstatic.com/team-logos/111.svg' height='30px' style='vertical-align:middle;'> Boston Red Sox</td>
+      <td id="T_101ec_row1_col0" class="data row1 col0" >7:10 PM ET</td>
+      <td id="T_101ec_row1_col1" class="data row1 col1" >Fenway Park</td>
+      <td id="T_101ec_row1_col2" class="data row1 col2" ><img src='https://www.mlbstatic.com/team-logos/108.svg' height='30px' style='vertical-align:middle;'> Los Angeles Angels</td>
+      <td id="T_101ec_row1_col3" class="data row1 col3" ><img src='https://www.mlbstatic.com/team-logos/111.svg' height='30px' style='vertical-align:middle;'> Boston Red Sox</td>
     </tr>
     <tr>
-      <td id="T_b3150_row2_col0" class="data row2 col0" >7:10 PM ET</td>
-      <td id="T_b3150_row2_col1" class="data row2 col1" >Great American Ball Park</td>
-      <td id="T_b3150_row2_col2" class="data row2 col2" ><img src='https://www.mlbstatic.com/team-logos/158.svg' height='30px' style='vertical-align:middle;'> Milwaukee Brewers</td>
-      <td id="T_b3150_row2_col3" class="data row2 col3" ><img src='https://www.mlbstatic.com/team-logos/113.svg' height='30px' style='vertical-align:middle;'> Cincinnati Reds</td>
+      <td id="T_101ec_row2_col0" class="data row2 col0" >7:10 PM ET</td>
+      <td id="T_101ec_row2_col1" class="data row2 col1" >Great American Ball Park</td>
+      <td id="T_101ec_row2_col2" class="data row2 col2" ><img src='https://www.mlbstatic.com/team-logos/158.svg' height='30px' style='vertical-align:middle;'> Milwaukee Brewers</td>
+      <td id="T_101ec_row2_col3" class="data row2 col3" ><img src='https://www.mlbstatic.com/team-logos/113.svg' height='30px' style='vertical-align:middle;'> Cincinnati Reds</td>
     </tr>
     <tr>
-      <td id="T_b3150_row3_col0" class="data row3 col0" >7:40 PM ET</td>
-      <td id="T_b3150_row3_col1" class="data row3 col1" >Rate Field</td>
-      <td id="T_b3150_row3_col2" class="data row3 col2" ><img src='https://www.mlbstatic.com/team-logos/116.svg' height='30px' style='vertical-align:middle;'> Detroit Tigers</td>
-      <td id="T_b3150_row3_col3" class="data row3 col3" ><img src='https://www.mlbstatic.com/team-logos/145.svg' height='30px' style='vertical-align:middle;'> Chicago White Sox</td>
+      <td id="T_101ec_row3_col0" class="data row3 col0" >7:40 PM ET</td>
+      <td id="T_101ec_row3_col1" class="data row3 col1" >Rate Field</td>
+      <td id="T_101ec_row3_col2" class="data row3 col2" ><img src='https://www.mlbstatic.com/team-logos/116.svg' height='30px' style='vertical-align:middle;'> Detroit Tigers</td>
+      <td id="T_101ec_row3_col3" class="data row3 col3" ><img src='https://www.mlbstatic.com/team-logos/145.svg' height='30px' style='vertical-align:middle;'> Chicago White Sox</td>
     </tr>
     <tr>
-      <td id="T_b3150_row4_col0" class="data row4 col0" >9:45 PM ET</td>
-      <td id="T_b3150_row4_col1" class="data row4 col1" >Oracle Park</td>
-      <td id="T_b3150_row4_col2" class="data row4 col2" ><img src='https://www.mlbstatic.com/team-logos/135.svg' height='30px' style='vertical-align:middle;'> San Diego Padres</td>
-      <td id="T_b3150_row4_col3" class="data row4 col3" ><img src='https://www.mlbstatic.com/team-logos/137.svg' height='30px' style='vertical-align:middle;'> San Francisco Giants</td>
+      <td id="T_101ec_row4_col0" class="data row4 col0" >9:45 PM ET</td>
+      <td id="T_101ec_row4_col1" class="data row4 col1" >Oracle Park</td>
+      <td id="T_101ec_row4_col2" class="data row4 col2" ><img src='https://www.mlbstatic.com/team-logos/135.svg' height='30px' style='vertical-align:middle;'> San Diego Padres</td>
+      <td id="T_101ec_row4_col3" class="data row4 col3" ><img src='https://www.mlbstatic.com/team-logos/137.svg' height='30px' style='vertical-align:middle;'> San Francisco Giants</td>
     </tr>
     <tr>
-      <td id="T_b3150_row5_col0" class="data row5 col0" >10:05 PM ET</td>
-      <td id="T_b3150_row5_col1" class="data row5 col1" >Sutter Health Park</td>
-      <td id="T_b3150_row5_col2" class="data row5 col2" ><img src='https://www.mlbstatic.com/team-logos/142.svg' height='30px' style='vertical-align:middle;'> Minnesota Twins</td>
-      <td id="T_b3150_row5_col3" class="data row5 col3" ><img src='https://www.mlbstatic.com/team-logos/133.svg' height='30px' style='vertical-align:middle;'> Oakland Athletics</td>
+      <td id="T_101ec_row5_col0" class="data row5 col0" >10:05 PM ET</td>
+      <td id="T_101ec_row5_col1" class="data row5 col1" >Sutter Health Park</td>
+      <td id="T_101ec_row5_col2" class="data row5 col2" ><img src='https://www.mlbstatic.com/team-logos/142.svg' height='30px' style='vertical-align:middle;'> Minnesota Twins</td>
+      <td id="T_101ec_row5_col3" class="data row5 col3" ><img src='https://www.mlbstatic.com/team-logos/133.svg' height='30px' style='vertical-align:middle;'> Oakland Athletics</td>
     </tr>
     <tr>
-      <td id="T_b3150_row6_col0" class="data row6 col0" >10:10 PM ET</td>
-      <td id="T_b3150_row6_col1" class="data row6 col1" >Dodger Stadium</td>
-      <td id="T_b3150_row6_col2" class="data row6 col2" ><img src='https://www.mlbstatic.com/team-logos/121.svg' height='30px' style='vertical-align:middle;'> New York Mets</td>
-      <td id="T_b3150_row6_col3" class="data row6 col3" ><img src='https://www.mlbstatic.com/team-logos/119.svg' height='30px' style='vertical-align:middle;'> Los Angeles Dodgers</td>
+      <td id="T_101ec_row6_col0" class="data row6 col0" >10:10 PM ET</td>
+      <td id="T_101ec_row6_col1" class="data row6 col1" >Dodger Stadium</td>
+      <td id="T_101ec_row6_col2" class="data row6 col2" ><img src='https://www.mlbstatic.com/team-logos/121.svg' height='30px' style='vertical-align:middle;'> New York Mets</td>
+      <td id="T_101ec_row6_col3" class="data row6 col3" ><img src='https://www.mlbstatic.com/team-logos/119.svg' height='30px' style='vertical-align:middle;'> Los Angeles Dodgers</td>
     </tr>
   </tbody>
 </table>
@@ -117,57 +117,57 @@ function showMatchup(away, home) {
 <h2 style='text-align:center; margin-top: 50px;'>Probable Pitchers</h2>
 <style type="text/css">
 </style>
-<table id="T_b6499">
+<table id="T_bce10">
   <thead>
     <tr>
-      <th id="T_b6499_level0_col0" class="col_heading level0 col0" >Matchup</th>
-      <th id="T_b6499_level0_col1" class="col_heading level0 col1" >Away Pitcher</th>
-      <th id="T_b6499_level0_col2" class="col_heading level0 col2" >Home Pitcher</th>
-      <th id="T_b6499_level0_col3" class="col_heading level0 col3" >Game Time</th>
+      <th id="T_bce10_level0_col0" class="col_heading level0 col0" >Matchup</th>
+      <th id="T_bce10_level0_col1" class="col_heading level0 col1" >Away Pitcher</th>
+      <th id="T_bce10_level0_col2" class="col_heading level0 col2" >Home Pitcher</th>
+      <th id="T_bce10_level0_col3" class="col_heading level0 col3" >Game Time</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td id="T_b6499_row0_col0" class="data row0 col0" >Colorado Rockies vs Miami Marlins</td>
-      <td id="T_b6499_row0_col1" class="data row0 col1" >German Marquez (R)</td>
-      <td id="T_b6499_row0_col2" class="data row0 col2" >Max Meyer (R)</td>
-      <td id="T_b6499_row0_col3" class="data row0 col3" >6:40 PM ET</td>
+      <td id="T_bce10_row0_col0" class="data row0 col0" >Colorado Rockies vs Miami Marlins</td>
+      <td id="T_bce10_row0_col1" class="data row0 col1" >German Marquez (R)</td>
+      <td id="T_bce10_row0_col2" class="data row0 col2" >Max Meyer (R)</td>
+      <td id="T_bce10_row0_col3" class="data row0 col3" >6:40 PM ET</td>
     </tr>
     <tr>
-      <td id="T_b6499_row1_col0" class="data row1 col0" >Los Angeles Angels vs Boston Red Sox</td>
-      <td id="T_b6499_row1_col1" class="data row1 col1" >Tyler Anderson (L)</td>
-      <td id="T_b6499_row1_col2" class="data row1 col2" >Richard Fitts (R)</td>
-      <td id="T_b6499_row1_col3" class="data row1 col3" >7:10 PM ET</td>
+      <td id="T_bce10_row1_col0" class="data row1 col0" >Los Angeles Angels vs Boston Red Sox</td>
+      <td id="T_bce10_row1_col1" class="data row1 col1" >Tyler Anderson (L)</td>
+      <td id="T_bce10_row1_col2" class="data row1 col2" >Richard Fitts (R)</td>
+      <td id="T_bce10_row1_col3" class="data row1 col3" >7:10 PM ET</td>
     </tr>
     <tr>
-      <td id="T_b6499_row2_col0" class="data row2 col0" >Milwaukee Brewers vs Cincinnati Reds</td>
-      <td id="T_b6499_row2_col1" class="data row2 col1" >Aaron Civale (R)</td>
-      <td id="T_b6499_row2_col2" class="data row2 col2" >Brady Singer (R)</td>
-      <td id="T_b6499_row2_col3" class="data row2 col3" >7:10 PM ET</td>
+      <td id="T_bce10_row2_col0" class="data row2 col0" >Milwaukee Brewers vs Cincinnati Reds</td>
+      <td id="T_bce10_row2_col1" class="data row2 col1" >Aaron Civale (R)</td>
+      <td id="T_bce10_row2_col2" class="data row2 col2" >Brady Singer (R)</td>
+      <td id="T_bce10_row2_col3" class="data row2 col3" >7:10 PM ET</td>
     </tr>
     <tr>
-      <td id="T_b6499_row3_col0" class="data row3 col0" >Detroit Tigers vs Chicago White Sox</td>
-      <td id="T_b6499_row3_col1" class="data row3 col1" >Jack Flaherty (R)</td>
-      <td id="T_b6499_row3_col2" class="data row3 col2" >Jonathan Cannon (R)</td>
-      <td id="T_b6499_row3_col3" class="data row3 col3" >7:40 PM ET</td>
+      <td id="T_bce10_row3_col0" class="data row3 col0" >Detroit Tigers vs Chicago White Sox</td>
+      <td id="T_bce10_row3_col1" class="data row3 col1" >Jack Flaherty (R)</td>
+      <td id="T_bce10_row3_col2" class="data row3 col2" >Jonathan Cannon (R)</td>
+      <td id="T_bce10_row3_col3" class="data row3 col3" >7:40 PM ET</td>
     </tr>
     <tr>
-      <td id="T_b6499_row4_col0" class="data row4 col0" >San Diego Padres vs San Francisco Giants</td>
-      <td id="T_b6499_row4_col1" class="data row4 col1" >Stephen Kolek (R)</td>
-      <td id="T_b6499_row4_col2" class="data row4 col2" >Logan Webb (R)</td>
-      <td id="T_b6499_row4_col3" class="data row4 col3" >9:45 PM ET</td>
+      <td id="T_bce10_row4_col0" class="data row4 col0" >San Diego Padres vs San Francisco Giants</td>
+      <td id="T_bce10_row4_col1" class="data row4 col1" >Stephen Kolek (R)</td>
+      <td id="T_bce10_row4_col2" class="data row4 col2" >Logan Webb (R)</td>
+      <td id="T_bce10_row4_col3" class="data row4 col3" >9:45 PM ET</td>
     </tr>
     <tr>
-      <td id="T_b6499_row5_col0" class="data row5 col0" >Minnesota Twins vs Oakland Athletics</td>
-      <td id="T_b6499_row5_col1" class="data row5 col1" >Joe Ryan (R)</td>
-      <td id="T_b6499_row5_col2" class="data row5 col2" >Luis Severino (R)</td>
-      <td id="T_b6499_row5_col3" class="data row5 col3" >10:05 PM ET</td>
+      <td id="T_bce10_row5_col0" class="data row5 col0" >Minnesota Twins vs Oakland Athletics</td>
+      <td id="T_bce10_row5_col1" class="data row5 col1" >Joe Ryan (R)</td>
+      <td id="T_bce10_row5_col2" class="data row5 col2" >Luis Severino (R)</td>
+      <td id="T_bce10_row5_col3" class="data row5 col3" >10:05 PM ET</td>
     </tr>
     <tr>
-      <td id="T_b6499_row6_col0" class="data row6 col0" >New York Mets vs Los Angeles Dodgers</td>
-      <td id="T_b6499_row6_col1" class="data row6 col1" >Paul Blackburn (R)</td>
-      <td id="T_b6499_row6_col2" class="data row6 col2" >Dustin May (R)</td>
-      <td id="T_b6499_row6_col3" class="data row6 col3" >10:10 PM ET</td>
+      <td id="T_bce10_row6_col0" class="data row6 col0" >New York Mets vs Los Angeles Dodgers</td>
+      <td id="T_bce10_row6_col1" class="data row6 col1" >Paul Blackburn (R)</td>
+      <td id="T_bce10_row6_col2" class="data row6 col2" >Dustin May (R)</td>
+      <td id="T_bce10_row6_col3" class="data row6 col3" >10:10 PM ET</td>
     </tr>
   </tbody>
 </table>
