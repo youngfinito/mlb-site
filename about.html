@@ -34,7 +34,7 @@
         position: relative;
     }
     .quote::before {
-        content: '“';
+        content: '\201C';
         font-size: 2em;
         color: #cfe2ff;
         position: relative;
@@ -42,7 +42,7 @@
         margin-right: 5px;
     }
     .quote::after {
-        content: '”';
+        content: '\201D';
         font-size: 2em;
         color: #cfe2ff;
         position: relative;
@@ -72,11 +72,10 @@
     <img src='https://www.mlbstatic.com/team-logos/league-on-dark/1.svg' alt='MLB Logo' style='height: 60px;'>
 </div>
 <nav>
-    <a href="index.html">Matchups</a> |
-    <a href="nrfi.html">NRFI Predictions</a> |
-    <a href="pitchers.html">Pitchers</a> |
-    <a href="slate.html">Today's Slate</a> |
-    <a href="top_props.html">Daily Top Props</a> |
+    <a href="index.html">Matchups</a>
+    <a href="nrfi.html">NRFI Predictions</a>
+    <a href="pitchers.html">Pitchers</a>
+    <a href="slate.html">Today's Slate</a>
     <a href="about.html">About</a>
 </nav>
 <h1>ABOUT</h1>
@@ -88,6 +87,15 @@
 </p>
 <div class="quote">Baseball fans are junkies, and their heroin is the statistic.</div>
 <div class="quote-attribution">- Robert S. Weider</div>
+
+<!-- 🔽 Video Section (No autoplay, no captions, no title) -->
+<div style="margin-top: 40px; text-align: center;">
+    <video width="100%" height="auto" controls>
+        <source src="assets/video/promo.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</div>
+
 <footer>
     &copy; 2025 MLB Data Analysis | donsMLBPlayground
 </footer>
