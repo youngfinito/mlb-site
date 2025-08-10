@@ -1,0 +1,78 @@
+=== MLB Pipeline Run Started 2025-08-10 15:10:40 ===
+SCRIPT_DIR: C:\mlbData
+PYTHON_EXE: C:\Users\liamp\AppData\Local\Programs\Python\Python313\python.exe
+REPO_PATH: C:\Users\liamp\Desktop\mlb-site
+--------------------------------------------------------------------------------
+[2025-08-10 15:10:40] $ 'C:\Users\liamp\AppData\Local\Programs\Python\Python313\python.exe' update.py  # Running update.py
+This is a large query, it may take a moment to complete
+  0%|          | 0/7 [00:00<?, ?it/s]C:\Users\liamp\AppData\Local\Programs\Python\Python313\Lib\site-packages\pybaseball\datahelpers\postprocessing.py:59: FutureWarning: errors='ignore' is deprecated and will raise in a future version. Use to_datetime without passing `errors` and catch exceptions explicitly instead
+  data_copy[column] = data_copy[column].apply(pd.to_datetime, errors='ignore', format=date_format)
+ 14%|#4        | 1/7 [00:05<00:33,  5.62s/it]C:\Users\liamp\AppData\Local\Programs\Python\Python313\Lib\site-packages\pybaseball\datahelpers\postprocessing.py:59: FutureWarning: errors='ignore' is deprecated and will raise in a future version. Use to_datetime without passing `errors` and catch exceptions explicitly instead
+  data_copy[column] = data_copy[column].apply(pd.to_datetime, errors='ignore', format=date_format)
+ 29%|##8       | 2/7 [00:06<00:14,  2.86s/it]C:\Users\liamp\AppData\Local\Programs\Python\Python313\Lib\site-packages\pybaseball\datahelpers\postprocessing.py:59: FutureWarning: errors='ignore' is deprecated and will raise in a future version. Use to_datetime without passing `errors` and catch exceptions explicitly instead
+  data_copy[column] = data_copy[column].apply(pd.to_datetime, errors='ignore', format=date_format)
+ 43%|####2     | 3/7 [00:08<00:10,  2.59s/it]C:\Users\liamp\AppData\Local\Programs\Python\Python313\Lib\site-packages\pybaseball\datahelpers\postprocessing.py:59: FutureWarning: errors='ignore' is deprecated and will raise in a future version. Use to_datetime without passing `errors` and catch exceptions explicitly instead
+  data_copy[column] = data_copy[column].apply(pd.to_datetime, errors='ignore', format=date_format)
+ 57%|#####7    | 4/7 [00:09<00:05,  1.72s/it]C:\Users\liamp\AppData\Local\Programs\Python\Python313\Lib\site-packages\pybaseball\datahelpers\postprocessing.py:59: FutureWarning: errors='ignore' is deprecated and will raise in a future version. Use to_datetime without passing `errors` and catch exceptions explicitly instead
+  data_copy[column] = data_copy[column].apply(pd.to_datetime, errors='ignore', format=date_format)
+ 71%|#######1  | 5/7 [00:09<00:02,  1.27s/it]C:\Users\liamp\AppData\Local\Programs\Python\Python313\Lib\site-packages\pybaseball\datahelpers\postprocessing.py:59: FutureWarning: errors='ignore' is deprecated and will raise in a future version. Use to_datetime without passing `errors` and catch exceptions explicitly instead
+  data_copy[column] = data_copy[column].apply(pd.to_datetime, errors='ignore', format=date_format)
+ 86%|########5 | 6/7 [00:09<00:00,  1.06it/s]C:\Users\liamp\AppData\Local\Programs\Python\Python313\Lib\site-packages\pybaseball\datahelpers\postprocessing.py:59: FutureWarning: errors='ignore' is deprecated and will raise in a future version. Use to_datetime without passing `errors` and catch exceptions explicitly instead
+  data_copy[column] = data_copy[column].apply(pd.to_datetime, errors='ignore', format=date_format)
+100%|##########| 7/7 [00:11<00:00,  1.02s/it]100%|##########| 7/7 [00:11<00:00,  1.60s/it]
+No new data to add for the given date range.
+Updated CSV files with full names have been created.
+Hit streaks with names have been calculated and saved to 'streaks.csv'.
+[2025-08-10 15:11:08] $ 'C:\Users\liamp\AppData\Local\Programs\Python\Python313\python.exe' testMatchup.py  # Running testMatchup.py
+Games scheduled for 2025-08-10: 15
+Gathering player lookup table. This may take a moment.
+Matchups generated: 244
+Missing IDs for 17 players. Example: N. Alvarez, R. Mauricio, W. Bernabel, B. Fulford, H. Hernandez
+Matchup data saved to: C:\mlbData\batter_vs_pitcher_auto_matchups.csv
+Matchup data also saved to: C:\mlbData\batter_matchups.csv
+Total results: 121
+[2025-08-10 15:11:24] $ 'C:\Users\liamp\AppData\Local\Programs\Python\Python313\python.exe' pitcherMatchup.py  # Running pitcherMatchup.py
+Games scheduled for 2025-08-10: 15
+Gathering player lookup table. This may take a moment.
+Pitcher-batter rows generated: 243
+Missing IDs for 18 players. Example: W. Bernabel, N. Alvarez, M. Harris, L. Keaschall, T. Peters
+Pitcher matchup data saved to: C:\mlbData\pitcher_matchups.csv
+Total results: 243
+[2025-08-10 15:11:41] $ 'C:\Users\liamp\AppData\Local\Programs\Python\Python313\python.exe' weather.py  # Running weather.py
+Games today: 15; Unique venues: 15
+Weather data saved to: C:\mlbData\mlb_weather_today.csv
+Prediction file saved to: C:\mlbData\mlb_high_scoring_predictions.csv
+[2025-08-10 15:11:43] $ 'C:\Users\liamp\AppData\Local\Programs\Python\Python313\python.exe' kPred.py  # Running kPred.py
+Gathering player lookup table. This may take a moment.
+Missing batter IDs for Minnesota Twins: ['L. Keaschall', 'R. Fitzgerald']
+Missing batter IDs for Athletics: ['W. MacIver']
+Missing batter IDs for Atlanta Braves: ['M. Harris', 'N. Alvarez']
+Missing batter IDs for Miami Marlins: ['H. Hernandez']
+Missing batter IDs for Los Angeles Angels: ['C. Moore']
+Missing batter IDs for Chicago White Sox: ['C. Montgomery', 'R. Anthony']
+Missing batter IDs for Cleveland Guardians: ['C.J. Kayfus']
+Missing batter IDs for New York Mets: ['R. Mauricio']
+Missing batter IDs for Texas Rangers: ['Avisail Garcia']
+Missing batter IDs for Tampa Bay Rays: ['C. Simpson', 'T. Peters']
+Missing batter IDs for Arizona Diamondbacks: ['A. Del Castillo']
+Missing batter IDs for Colorado Rockies: ['W. Bernabel', 'Y. Fernandez', 'B. Fulford']
+kPred.csv created with 30 rows at C:\mlbData\kPred.csv
+[2025-08-10 15:11:55] $ 'C:\Users\liamp\AppData\Local\Programs\Python\Python313\python.exe' nrfi.py  # Running nrfi.py
+C:\mlbData\nrfi.py:284: MatplotlibDeprecationWarning: The get_cmap function was deprecated in Matplotlib 3.7 and will be removed in 3.11. Use ``matplotlib.colormaps[name]`` or ``matplotlib.colormaps.get_cmap()`` or ``pyplot.get_cmap()`` instead.
+  colors = cm.get_cmap('RdYlGn_r')(np.linspace(0, 1, len(results_df)))
+NRFI report generated and saved to: C:\Users\liamp\Desktop\mlb-site\nrfi.html
+[2025-08-10 15:12:08] $ 'C:\Users\liamp\AppData\Local\Programs\Python\Python313\python.exe' pitcher.py  # Running pitcher.py
+Pitchers page created at: C:\Users\liamp\Desktop\mlb-site\pitchers.html
+[2025-08-10 15:12:23] $ 'C:\Users\liamp\AppData\Local\Programs\Python\Python313\python.exe' topProps.py  # Running topProps.py
+Top props page saved to: C:\Users\liamp\Desktop\mlb-site\top_props.html
+[2025-08-10 15:12:24] $ 'C:\Users\liamp\AppData\Local\Programs\Python\Python313\python.exe' slate.py  # Running slate.py
+Slate page generated successfully.
+[2025-08-10 15:12:24] $ 'C:\Users\liamp\AppData\Local\Programs\Python\Python313\python.exe' index_page.py  # Running index_page.py
+Traceback (most recent call last):
+  File "C:\mlbData\index_page.py", line 246, in <module>
+    print(f"\u2705 HTML saved to {HTML_FILENAME}")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\liamp\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2705' in position 0: character maps to <undefined>
