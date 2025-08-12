@@ -1,0 +1,8 @@
+=== MLB Pipeline Run Started 2025-08-12 18:22:16 ===
+SCRIPT_DIR: C:\mlbData
+PYTHON_EXE: C:\Users\liamp\AppData\Local\Programs\Python\Python313\python.exe
+REPO_PATH: C:\Users\liamp\Desktop\mlb-site
+MPLCONFIGDIR: C:\mlbData\_mplcache
+--------------------------------------------------------------------------------
+[2025-08-12 18:22:16] $ 'C:\Users\liamp\AppData\Local\Programs\Python\Python313\python.exe' update.py  # Running update.py
+[2025-08-12 18:22:17] $ 'C:\Users\liamp\AppData\Local\Programs\Python\Python313\python.exe' testMatchup.py  # Running testMatchup.py

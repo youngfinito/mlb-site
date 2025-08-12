@@ -1,0 +1,16 @@
+=== MLB Pipeline Run Started 2025-08-12 18:21:43 ===
+SCRIPT_DIR: C:\mlbData
+PYTHON_EXE: C:\Users\liamp\AppData\Local\Programs\Python\Python313\python.exe
+REPO_PATH: C:\Users\liamp\Desktop\mlb-site
+MPLCONFIGDIR: C:\mlbData\_mplcache
+--------------------------------------------------------------------------------
+[2025-08-12 18:21:43] $ 'C:\Users\liamp\AppData\Local\Programs\Python\Python313\python.exe' update.py  # Running update.py
+[2025-08-12 18:21:44] $ 'C:\Users\liamp\AppData\Local\Programs\Python\Python313\python.exe' testMatchup.py  # Running testMatchup.py
+Games scheduled for 2025-08-12: 15
+Gathering player lookup table. This may take a moment.
+Matchups generated: 236
+Missing IDs for 18 players. Example: L. Keaschall, C. Simpson, H. Hernandez, C. Montgomery, W. Bernabel
+Matchup data saved to: C:\mlbData\batter_vs_pitcher_auto_matchups.csv
+Matchup data also saved to: C:\mlbData\batter_matchups.csv
+Total results: 123
+[2025-08-12 18:22:02] $ 'C:\Users\liamp\AppData\Local\Programs\Python\Python313\python.exe' pitcherMatchup.py  # Running pitcherMatchup.py
