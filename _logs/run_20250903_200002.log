@@ -1,0 +1,102 @@
+=== MLB Pipeline Run Started 2025-09-03 20:00:02 ===
+SCRIPT_DIR: C:\mlbData
+PYTHON_EXE: C:\Users\liamp\AppData\Local\Programs\Python\Python313\python.exe
+REPO_PATH: C:\Users\liamp\Desktop\mlb-site
+MPLCONFIGDIR: C:\mlbData\_mplcache
+--------------------------------------------------------------------------------
+[2025-09-03 20:00:02] $ 'C:\Users\liamp\AppData\Local\Programs\Python\Python313\python.exe' update.py  # Running update.py
+This is a large query, it may take a moment to complete
+
+  0%|          | 0/6 [00:00<?, ?it/s]C:\Users\liamp\AppData\Local\Programs\Python\Python313\Lib\site-packages\pybaseball\datahelpers\postprocessing.py:59: FutureWarning: errors='ignore' is deprecated and will raise in a future version. Use to_datetime without passing `errors` and catch exceptions explicitly instead
+  data_copy[column] = data_copy[column].apply(pd.to_datetime, errors='ignore', format=date_format)
+
+ 17%|█▋        | 1/6 [00:00<00:02,  1.95it/s]C:\Users\liamp\AppData\Local\Programs\Python\Python313\Lib\site-packages\pybaseball\datahelpers\postprocessing.py:59: FutureWarning: errors='ignore' is deprecated and will raise in a future version. Use to_datetime without passing `errors` and catch exceptions explicitly instead
+  data_copy[column] = data_copy[column].apply(pd.to_datetime, errors='ignore', format=date_format)
+
+ 33%|███▎      | 2/6 [00:00<00:01,  2.17it/s]C:\Users\liamp\AppData\Local\Programs\Python\Python313\Lib\site-packages\pybaseball\datahelpers\postprocessing.py:59: FutureWarning: errors='ignore' is deprecated and will raise in a future version. Use to_datetime without passing `errors` and catch exceptions explicitly instead
+  data_copy[column] = data_copy[column].apply(pd.to_datetime, errors='ignore', format=date_format)
+
+ 50%|█████     | 3/6 [00:01<00:01,  2.17it/s]C:\Users\liamp\AppData\Local\Programs\Python\Python313\Lib\site-packages\pybaseball\datahelpers\postprocessing.py:59: FutureWarning: errors='ignore' is deprecated and will raise in a future version. Use to_datetime without passing `errors` and catch exceptions explicitly instead
+  data_copy[column] = data_copy[column].apply(pd.to_datetime, errors='ignore', format=date_format)
+
+ 67%|██████▋   | 4/6 [00:01<00:00,  2.20it/s]C:\Users\liamp\AppData\Local\Programs\Python\Python313\Lib\site-packages\pybaseball\datahelpers\postprocessing.py:59: FutureWarning: errors='ignore' is deprecated and will raise in a future version. Use to_datetime without passing `errors` and catch exceptions explicitly instead
+  data_copy[column] = data_copy[column].apply(pd.to_datetime, errors='ignore', format=date_format)
+
+ 83%|████████▎ | 5/6 [00:02<00:00,  2.24it/s]
+100%|██████████| 6/6 [00:02<00:00,  2.58it/s]
+C:\Users\liamp\AppData\Local\Programs\Python\Python313\Lib\site-packages\pybaseball\statcast.py:85: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  final_data = pd.concat(dataframe_list, axis=0).convert_dtypes(convert_string=False)
+[2025-09-03 20:00:33] $ 'C:\Users\liamp\AppData\Local\Programs\Python\Python313\python.exe' testMatchup.py  # Running testMatchup.py
+Games scheduled for 2025-09-03: 15
+Gathering player lookup table. This may take a moment.
+Matchups generated: 240
+Missing IDs for 21 players. Example: J. Caglianone, A. Seigler, H. Hernandez, C. Meidroth, R. Hassell
+Matchup data saved to: C:\mlbData\batter_vs_pitcher_auto_matchups.csv
+Matchup data also saved to: C:\mlbData\batter_matchups.csv
+Total results: 117
+[2025-09-03 20:00:54] $ 'C:\Users\liamp\AppData\Local\Programs\Python\Python313\python.exe' pitcherMatchup.py  # Running pitcherMatchup.py
+Games scheduled for 2025-09-03: 15
+Gathering player lookup table. This may take a moment.
+Pitcher-batter rows generated: 240
+Missing IDs for 21 players. Example: C. Williams, L. Keaschall, A. Del Castillo, H. Hernandez, C. Montgomery
+Pitcher matchup data saved to: C:\mlbData\pitcher_matchups.csv
+Total results: 240
+[2025-09-03 20:01:15] $ 'C:\Users\liamp\AppData\Local\Programs\Python\Python313\python.exe' weather.py  # Running weather.py
+C:\mlbData\weather.py:200: FutureWarning: Downcasting behavior in `replace` is deprecated and will be removed in a future version. To retain the old behavior, explicitly call `result.infer_objects(copy=False)`. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  train = train.replace("Missing Info", np.nan)
+Games today: 15; Unique venues: 15
+[WARN] No city mapping for venue: Daikin Park
+Weather data saved to: C:\mlbData\mlb_weather_today.csv
+Prediction file saved to: C:\mlbData\mlb_high_scoring_predictions.csv
+[2025-09-03 20:01:17] $ 'C:\Users\liamp\AppData\Local\Programs\Python\Python313\python.exe' kPred.py  # Running kPred.py
+Gathering player lookup table. This may take a moment.
+Missing batter IDs for Washington Nationals: ['R. Hassell']
+Missing batter IDs for Miami Marlins: ['A. Ramirez', 'H. Hernandez']
+Missing batter IDs for Arizona Diamondbacks: ['A. Del Castillo']
+Missing batter IDs for Texas Rangers: ['A. Osuna']
+Missing batter IDs for Pittsburgh Pirates: ['Cam Devanney']
+Missing batter IDs for Los Angeles Dodgers: ['A. Freeland']
+Missing batter IDs for Boston Red Sox: ['C. Montgomery', 'C. Meidroth']
+Missing batter IDs for Cleveland Guardians: ['C.J. Kayfus']
+Missing batter IDs for Tampa Bay Rays: ['C. Simpson', 'C. Williams']
+Missing batter IDs for Kansas City Royals: ['J. Caglianone']
+Missing batter IDs for Milwaukee Brewers: ['A. Seigler']
+Missing batter IDs for Atlanta Braves: ['Ronald Acuna', 'D. Baldwin', 'M. Harris', 'N. Alvarez']
+Missing batter IDs for Athletics: ['W. MacIver']
+Missing batter IDs for Colorado Rockies: ['W. Bernabel', 'B. Fulford']
+kPred.csv created with 30 rows at C:\mlbData\kPred.csv
+[2025-09-03 20:01:31] $ 'C:\Users\liamp\AppData\Local\Programs\Python\Python313\python.exe' NRFI.py  # Running NRFI.py
+C:\mlbData\NRFI.py:284: MatplotlibDeprecationWarning: The get_cmap function was deprecated in Matplotlib 3.7 and will be removed in 3.11. Use ``matplotlib.colormaps[name]`` or ``matplotlib.colormaps.get_cmap()`` or ``pyplot.get_cmap()`` instead.
+  colors = cm.get_cmap('RdYlGn_r')(np.linspace(0, 1, len(results_df)))
+NRFI report generated and saved to: C:\Users\liamp\Desktop\mlb-site\nrfi.html
+[2025-09-03 20:01:47] $ 'C:\Users\liamp\AppData\Local\Programs\Python\Python313\python.exe' pitcher.py  # Running pitcher.py
+Pitchers page created at: C:\Users\liamp\Desktop\mlb-site\pitchers.html
+[2025-09-03 20:02:03] $ 'C:\Users\liamp\AppData\Local\Programs\Python\Python313\python.exe' topProps.py  # Running topProps.py
+Top props page saved to: C:\Users\liamp\Desktop\mlb-site\top_props.html
+[2025-09-03 20:02:04] $ 'C:\Users\liamp\AppData\Local\Programs\Python\Python313\python.exe' slate.py  # Running slate.py
+Slate page generated successfully.
+[2025-09-03 20:02:05] $ 'C:\Users\liamp\AppData\Local\Programs\Python\Python313\python.exe' index_page.py  # Running index_page.py
+✅ HTML saved to C:\Users\liamp\Desktop\mlb-site\index.html
+--------------------------------------------------------------------------------
+Pushing updated HTML files to GitHub Pages...
+[2025-09-03 20:02:19] $ 'C:\Users\liamp\AppData\Local\Programs\Git\cmd\git.exe' add .  # git add .
+[2025-09-03 20:02:20] $ 'C:\Users\liamp\AppData\Local\Programs\Git\cmd\git.exe' commit -m 'Auto update HTMLs'  # git commit
+[main aac86b7] Auto update HTMLs
+ Committer: Liam Passi <Liamp@dorasnaturals.net>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 7 files changed, 5923 insertions(+), 5821 deletions(-)
+ create mode 100644 _logs/run_20250903_200002.log
+[2025-09-03 20:02:20] $ 'C:\Users\liamp\AppData\Local\Programs\Git\cmd\git.exe' push  # git push
+To https://github.com/youngfinito/mlb-site.git
+   5c17d0f..aac86b7  main -> main
+=== MLB Pipeline Run Finished 2025-09-03 20:02:21 ===
