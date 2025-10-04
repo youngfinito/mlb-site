@@ -1,4 +1,205 @@
-<html><body style="font-family:sans-serif;padding:24px;">
-        <h1>Pitcher Stats - October 04, 2025</h1>
-        <p>Data unavailable (statcast or starters missing).</p>
-        </body></html>
+
+<html>
+<head>
+<meta charset="utf-8" />
+<style>
+body { font-family: sans-serif; margin: 30px; }
+table { border-collapse: collapse; width: 100%; }
+th, td { padding: 8px; text-align: left; border-bottom: 1px solid #ddd; }
+tr:hover { background-color: #f5f5f5; }
+.hover-name { position: relative; color: black; font-weight: bold; cursor: pointer; }
+.hover-chart {
+  display: none; position: fixed; background: white; padding: 10px; border: 1px solid #ccc;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.1); z-index: 999; pointer-events: none;
+  border-radius: 8px; max-width: 250px;
+}
+.hover-name:hover .hover-chart { display: block; }
+img { max-width: 100%; }
+</style>
+<script>
+function movePopup(event) {
+  var popup = document.querySelector('.hover-name:hover .hover-chart');
+  if (!popup) return;
+  setTimeout(() => {
+    var h = popup.offsetHeight || 100, w = popup.offsetWidth || 150, b = 20;
+    var top = event.clientY + b, left = event.clientX + b;
+    if (event.clientY + h + b > window.innerHeight) top = event.clientY - h - b;
+    if (event.clientX + w + b > window.innerWidth) left = event.clientX - w - b;
+    popup.style.top = top + 'px'; popup.style.left = left + 'px';
+  }, 0);
+}
+</script>
+</head>
+<body>
+<div style='text-align:center; margin-bottom: 10px;'>
+  <img src='https://www.mlbstatic.com/team-logos/league-on-dark/1.svg' height='60px'>
+</div>
+<div style='text-align:center; margin-bottom: 30px;'>
+  <a href="index.html">Matchups</a> |
+  <a href="nrfi.html">NRFI Predictions</a> |
+  <a href="pitchers.html">Pitchers</a> |
+  <a href="slate.html">Today's Slate</a> |
+  <a href="top_props.html">Daily Top Props</a> |
+  <a href="about.html">About</a>
+</div>
+
+<h1 style='text-align:center;'>Pitcher Stats - October 04, 2025</h1>
+<style type="text/css">
+#T_ef63e_row0_col3 {
+  background-color: #fdbd6d;
+  color: #000000;
+}
+#T_ef63e_row0_col4, #T_ef63e_row0_col5, #T_ef63e_row0_col7, #T_ef63e_row0_col8, #T_ef63e_row1_col4, #T_ef63e_row1_col5, #T_ef63e_row1_col7, #T_ef63e_row1_col8, #T_ef63e_row2_col4, #T_ef63e_row2_col5, #T_ef63e_row2_col7, #T_ef63e_row2_col8, #T_ef63e_row3_col4, #T_ef63e_row3_col5, #T_ef63e_row3_col7, #T_ef63e_row3_col8, #T_ef63e_row4_col4, #T_ef63e_row4_col5, #T_ef63e_row4_col7, #T_ef63e_row4_col8, #T_ef63e_row5_col4, #T_ef63e_row5_col5, #T_ef63e_row5_col7, #T_ef63e_row5_col8, #T_ef63e_row6_col4, #T_ef63e_row6_col5, #T_ef63e_row6_col7, #T_ef63e_row6_col8 {
+  filter: blur(4px);
+  color: transparent;
+  text-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+#T_ef63e_row1_col3 {
+  background-color: #b9e176;
+  color: #000000;
+}
+#T_ef63e_row2_col3 {
+  background-color: #006837;
+  color: #f1f1f1;
+}
+#T_ef63e_row3_col3 {
+  background-color: #93d168;
+  color: #000000;
+}
+#T_ef63e_row4_col3 {
+  background-color: #cdea83;
+  color: #000000;
+}
+#T_ef63e_row5_col3 {
+  background-color: #87cb67;
+  color: #000000;
+}
+#T_ef63e_row6_col3 {
+  background-color: #a50026;
+  color: #f1f1f1;
+}
+</style>
+<table id="T_ef63e">
+  <thead>
+    <tr>
+      <th id="T_ef63e_level0_col0" class="col_heading level0 col0" >Display Pitcher</th>
+      <th id="T_ef63e_level0_col1" class="col_heading level0 col1" >Innings Pitched</th>
+      <th id="T_ef63e_level0_col2" class="col_heading level0 col2" >Strikeouts</th>
+      <th id="T_ef63e_level0_col3" class="col_heading level0 col3" >K/9</th>
+      <th id="T_ef63e_level0_col4" class="col_heading level0 col4" >SwStr%</th>
+      <th id="T_ef63e_level0_col5" class="col_heading level0 col5" >CSW%</th>
+      <th id="T_ef63e_level0_col6" class="col_heading level0 col6" >First Pitch Strike %</th>
+      <th id="T_ef63e_level0_col7" class="col_heading level0 col7" >Zone %</th>
+      <th id="T_ef63e_level0_col8" class="col_heading level0 col8" >Pitch Efficiency</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td id="T_ef63e_row0_col0" class="data row0 col0" >Freddy Peralta</td>
+      <td id="T_ef63e_row0_col1" class="data row0 col1" >343.666667</td>
+      <td id="T_ef63e_row0_col2" class="data row0 col2" >408</td>
+      <td id="T_ef63e_row0_col3" class="data row0 col3" >10.68</td>
+      <td id="T_ef63e_row0_col4" class="data row0 col4" >13.04%</td>
+      <td id="T_ef63e_row0_col5" class="data row0 col5" >27.39%</td>
+      <td id="T_ef63e_row0_col6" class="data row0 col6" >42.86%</td>
+      <td id="T_ef63e_row0_col7" class="data row0 col7" >100.00%</td>
+      <td id="T_ef63e_row0_col8" class="data row0 col8" >0.01</td>
+    </tr>
+    <tr>
+      <td id="T_ef63e_row1_col0" class="data row1 col0" >George Kirby</td>
+      <td id="T_ef63e_row1_col1" class="data row1 col1" >303.000000</td>
+      <td id="T_ef63e_row1_col2" class="data row1 col2" >308</td>
+      <td id="T_ef63e_row1_col3" class="data row1 col3" >9.15</td>
+      <td id="T_ef63e_row1_col4" class="data row1 col4" >11.59%</td>
+      <td id="T_ef63e_row1_col5" class="data row1 col5" >27.01%</td>
+      <td id="T_ef63e_row1_col6" class="data row1 col6" >50.00%</td>
+      <td id="T_ef63e_row1_col7" class="data row1 col7" >100.00%</td>
+      <td id="T_ef63e_row1_col8" class="data row1 col8" >0.01</td>
+    </tr>
+    <tr>
+      <td id="T_ef63e_row2_col0" class="data row2 col0" >Keider Montero</td>
+      <td id="T_ef63e_row2_col1" class="data row2 col1" >185.666667</td>
+      <td id="T_ef63e_row2_col2" class="data row2 col2" >156</td>
+      <td id="T_ef63e_row2_col3" class="data row2 col3" >7.56</td>
+      <td id="T_ef63e_row2_col4" class="data row2 col4" >9.00%</td>
+      <td id="T_ef63e_row2_col5" class="data row2 col5" >27.23%</td>
+      <td id="T_ef63e_row2_col6" class="data row2 col6" >46.25%</td>
+      <td id="T_ef63e_row2_col7" class="data row2 col7" >100.00%</td>
+      <td id="T_ef63e_row2_col8" class="data row2 col8" >0.03</td>
+    </tr>
+    <tr>
+      <td id="T_ef63e_row3_col0" class="data row3 col0" >Kevin Gausman</td>
+      <td id="T_ef63e_row3_col1" class="data row3 col1" >355.000000</td>
+      <td id="T_ef63e_row3_col2" class="data row3 col2" >348</td>
+      <td id="T_ef63e_row3_col3" class="data row3 col3" >8.82</td>
+      <td id="T_ef63e_row3_col4" class="data row3 col4" >11.47%</td>
+      <td id="T_ef63e_row3_col5" class="data row3 col5" >27.06%</td>
+      <td id="T_ef63e_row3_col6" class="data row3 col6" >55.56%</td>
+      <td id="T_ef63e_row3_col7" class="data row3 col7" >100.00%</td>
+      <td id="T_ef63e_row3_col8" class="data row3 col8" >0.01</td>
+    </tr>
+    <tr>
+      <td id="T_ef63e_row4_col0" class="data row4 col0" >Luis Gil</td>
+      <td id="T_ef63e_row4_col1" class="data row4 col1" >217.333333</td>
+      <td id="T_ef63e_row4_col2" class="data row4 col2" >225</td>
+      <td id="T_ef63e_row4_col3" class="data row4 col3" >9.32</td>
+      <td id="T_ef63e_row4_col4" class="data row4 col4" >10.85%</td>
+      <td id="T_ef63e_row4_col5" class="data row4 col5" >26.72%</td>
+      <td id="T_ef63e_row4_col6" class="data row4 col6" >54.24%</td>
+      <td id="T_ef63e_row4_col7" class="data row4 col7" >100.00%</td>
+      <td id="T_ef63e_row4_col8" class="data row4 col8" >0.02</td>
+    </tr>
+    <tr>
+      <td id="T_ef63e_row5_col0" class="data row5 col0" >Matthew Boyd</td>
+      <td id="T_ef63e_row5_col1" class="data row5 col1" >216.333333</td>
+      <td id="T_ef63e_row5_col2" class="data row5 col2" >210</td>
+      <td id="T_ef63e_row5_col3" class="data row5 col3" >8.74</td>
+      <td id="T_ef63e_row5_col4" class="data row5 col4" >11.66%</td>
+      <td id="T_ef63e_row5_col5" class="data row5 col5" >27.41%</td>
+      <td id="T_ef63e_row5_col6" class="data row5 col6" >57.14%</td>
+      <td id="T_ef63e_row5_col7" class="data row5 col7" >100.00%</td>
+      <td id="T_ef63e_row5_col8" class="data row5 col8" >0.02</td>
+    </tr>
+    <tr>
+      <td id="T_ef63e_row6_col0" class="data row6 col0" >Shohei Ohtani</td>
+      <td id="T_ef63e_row6_col1" class="data row6 col1" >42.666667</td>
+      <td id="T_ef63e_row6_col2" class="data row6 col2" >58</td>
+      <td id="T_ef63e_row6_col3" class="data row6 col3" >12.23</td>
+      <td id="T_ef63e_row6_col4" class="data row6 col4" >14.09%</td>
+      <td id="T_ef63e_row6_col5" class="data row6 col5" >29.57%</td>
+      <td id="T_ef63e_row6_col6" class="data row6 col6" >53.49%</td>
+      <td id="T_ef63e_row6_col7" class="data row6 col7" >100.00%</td>
+      <td id="T_ef63e_row6_col8" class="data row6 col8" >0.06</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<h2 style='text-align:center; margin-top: 50px;'>K Predictions</h2>
+<style type="text/css">
+</style>
+<table id="T_00d4f">
+  <thead>
+    <tr>
+      <th id="T_00d4f_level0_col0" class="col_heading level0 col0" >Pitcher</th>
+      <th id="T_00d4f_level0_col1" class="col_heading level0 col1" >Pitching Team</th>
+      <th id="T_00d4f_level0_col2" class="col_heading level0 col2" >Batting Team</th>
+      <th id="T_00d4f_level0_col3" class="col_heading level0 col3" >Bat K%</th>
+      <th id="T_00d4f_level0_col4" class="col_heading level0 col4" >Bat K% LRecent</th>
+      <th id="T_00d4f_level0_col5" class="col_heading level0 col5" >K/9</th>
+      <th id="T_00d4f_level0_col6" class="col_heading level0 col6" >K/9 L5</th>
+      <th id="T_00d4f_level0_col7" class="col_heading level0 col7" >CSW%</th>
+      <th id="T_00d4f_level0_col8" class="col_heading level0 col8" >K%</th>
+      <th id="T_00d4f_level0_col9" class="col_heading level0 col9" >PA</th>
+      <th id="T_00d4f_level0_col10" class="col_heading level0 col10" >Est. IP</th>
+      <th id="T_00d4f_level0_col11" class="col_heading level0 col11" >Pred Ks</th>
+    </tr>
+  </thead>
+  <tbody>
+  </tbody>
+</table>
+
+
+<div style='text-align:center;margin-top:40px;font-size:0.9em;color:#6c757d;'>&copy; 2025 MLB Data Analysis | donsMLBPlayground</div>
+</body>
+</html>
