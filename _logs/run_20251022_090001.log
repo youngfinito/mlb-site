@@ -1,0 +1,144 @@
+=== MLB Pipeline Run Started 2025-10-22 09:00:01 ===
+SCRIPT_DIR: C:\mlbData
+PYTHON_EXE: C:\Users\liamp\AppData\Local\Programs\Python\Python313\python.exe
+REPO_PATH: C:\Users\liamp\Desktop\mlb-site
+MPLCONFIGDIR: C:\mlbData\_mplcache
+--------------------------------------------------------------------------------
+[2025-10-22 09:00:01] $ 'C:\Users\liamp\AppData\Local\Programs\Python\Python313\python.exe' update.py  # Running update.py
+This is a large query, it may take a moment to complete
+
+  0%|          | 0/6 [00:00<?, ?it/s]C:\Users\liamp\AppData\Local\Programs\Python\Python313\Lib\site-packages\pybaseball\datahelpers\postprocessing.py:59: FutureWarning: errors='ignore' is deprecated and will raise in a future version. Use to_datetime without passing `errors` and catch exceptions explicitly instead
+  data_copy[column] = data_copy[column].apply(pd.to_datetime, errors='ignore', format=date_format)
+
+ 17%|█▋        | 1/6 [00:00<00:00,  5.35it/s]
+ 33%|███▎      | 2/6 [00:00<00:00,  7.34it/s]C:\Users\liamp\AppData\Local\Programs\Python\Python313\Lib\site-packages\pybaseball\datahelpers\postprocessing.py:59: FutureWarning: errors='ignore' is deprecated and will raise in a future version. Use to_datetime without passing `errors` and catch exceptions explicitly instead
+  data_copy[column] = data_copy[column].apply(pd.to_datetime, errors='ignore', format=date_format)
+C:\Users\liamp\AppData\Local\Programs\Python\Python313\Lib\site-packages\pybaseball\datahelpers\postprocessing.py:59: FutureWarning: errors='ignore' is deprecated and will raise in a future version. Use to_datetime without passing `errors` and catch exceptions explicitly instead
+  data_copy[column] = data_copy[column].apply(pd.to_datetime, errors='ignore', format=date_format)
+
+ 67%|██████▋   | 4/6 [00:00<00:00,  8.50it/s]
+100%|██████████| 6/6 [00:00<00:00,  7.83it/s]
+100%|██████████| 6/6 [00:00<00:00,  7.70it/s]
+C:\Users\liamp\AppData\Local\Programs\Python\Python313\Lib\site-packages\pybaseball\statcast.py:85: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  final_data = pd.concat(dataframe_list, axis=0).convert_dtypes(convert_string=False)
+[2025-10-22 09:00:32] $ 'C:\Users\liamp\AppData\Local\Programs\Python\Python313\python.exe' testMatchup.py  # Running testMatchup.py
+Traceback (most recent call last):
+  File "C:\mlbData\testMatchup.py", line 42, in <module>
+    lineups_df  = safe_read_csv(LINEUPS_PATH)
+  File "C:\mlbData\testMatchup.py", line 27, in safe_read_csv
+    return pd.read_csv(path, **kw)
+           ~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\liamp\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\io\parsers\readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\liamp\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\io\parsers\readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\liamp\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\io\parsers\readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\liamp\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\io\parsers\readers.py", line 1898, in _make_engine
+    return mapping[engine](f, **self.options)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\liamp\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\io\parsers\c_parser_wrapper.py", line 93, in __init__
+    self._reader = parsers.TextReader(src, **kwds)
+                   ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "pandas/_libs/parsers.pyx", line 581, in pandas._libs.parsers.TextReader.__cinit__
+pandas.errors.EmptyDataError: No columns to parse from file
+[2025-10-22 09:00:34] $ 'C:\Users\liamp\AppData\Local\Programs\Python\Python313\python.exe' pitcherMatchup.py  # Running pitcherMatchup.py
+Traceback (most recent call last):
+  File "C:\mlbData\pitcherMatchup.py", line 37, in <module>
+    lineups_df  = safe_read_csv(LINEUPS_PATH)
+  File "C:\mlbData\pitcherMatchup.py", line 26, in safe_read_csv
+    return pd.read_csv(path, **kw)
+           ~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\liamp\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\io\parsers\readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\liamp\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\io\parsers\readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\liamp\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\io\parsers\readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\liamp\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\io\parsers\readers.py", line 1898, in _make_engine
+    return mapping[engine](f, **self.options)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\liamp\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\io\parsers\c_parser_wrapper.py", line 93, in __init__
+    self._reader = parsers.TextReader(src, **kwds)
+                   ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "pandas/_libs/parsers.pyx", line 581, in pandas._libs.parsers.TextReader.__cinit__
+pandas.errors.EmptyDataError: No columns to parse from file
+[2025-10-22 09:00:35] $ 'C:\Users\liamp\AppData\Local\Programs\Python\Python313\python.exe' weather.py  # Running weather.py
+Games today: 0; Unique venues: 0
+Weather data saved to: C:\mlbData\mlb_weather_today.csv
+No matching venues found for today; wrote empty predictions file.
+[2025-10-22 09:00:37] $ 'C:\Users\liamp\AppData\Local\Programs\Python\Python313\python.exe' kPred.py  # Running kPred.py
+Traceback (most recent call last):
+  File "C:\mlbData\kPred.py", line 158, in <module>
+    starters = safe_read_csv(STARTERS_CSV)
+  File "C:\mlbData\kPred.py", line 27, in safe_read_csv
+    return pd.read_csv(path, **kw)
+           ~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\liamp\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\io\parsers\readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\liamp\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\io\parsers\readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\liamp\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\io\parsers\readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\liamp\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\io\parsers\readers.py", line 1898, in _make_engine
+    return mapping[engine](f, **self.options)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\liamp\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\io\parsers\c_parser_wrapper.py", line 93, in __init__
+    self._reader = parsers.TextReader(src, **kwds)
+                   ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "pandas/_libs/parsers.pyx", line 581, in pandas._libs.parsers.TextReader.__cinit__
+pandas.errors.EmptyDataError: No columns to parse from file
+[2025-10-22 09:00:38] $ 'C:\Users\liamp\AppData\Local\Programs\Python\Python313\python.exe' NRFI.py  # Running NRFI.py
+Traceback (most recent call last):
+  File "C:\mlbData\NRFI.py", line 101, in <module>
+    lineups_df = pd.read_csv(LINEUPS_PATH)
+  File "C:\Users\liamp\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\io\parsers\readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\liamp\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\io\parsers\readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\liamp\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\io\parsers\readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\liamp\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\io\parsers\readers.py", line 1898, in _make_engine
+    return mapping[engine](f, **self.options)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\liamp\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\io\parsers\c_parser_wrapper.py", line 93, in __init__
+    self._reader = parsers.TextReader(src, **kwds)
+                   ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "pandas/_libs/parsers.pyx", line 581, in pandas._libs.parsers.TextReader.__cinit__
+pandas.errors.EmptyDataError: No columns to parse from file
+[2025-10-22 09:00:40] $ 'C:\Users\liamp\AppData\Local\Programs\Python\Python313\python.exe' pitcher.py  # Running pitcher.py
+Pitchers page created at: C:\Users\liamp\Desktop\mlb-site\pitchers.html (minimal; missing inputs)
+[2025-10-22 09:00:54] $ 'C:\Users\liamp\AppData\Local\Programs\Python\Python313\python.exe' topProps.py  # Running topProps.py
+Top props page saved to: C:\Users\liamp\Desktop\mlb-site\top_props.html
+[2025-10-22 09:00:55] $ 'C:\Users\liamp\AppData\Local\Programs\Python\Python313\python.exe' slate.py  # Running slate.py
+Slate page generated successfully.
+[2025-10-22 09:00:56] $ 'C:\Users\liamp\AppData\Local\Programs\Python\Python313\python.exe' index_page.py  # Running index_page.py
+✅ HTML saved to C:\Users\liamp\Desktop\mlb-site\index.html
+--------------------------------------------------------------------------------
+Pushing updated HTML files to GitHub Pages...
+[2025-10-22 09:01:10] $ 'C:\Users\liamp\AppData\Local\Programs\Git\cmd\git.exe' add .  # git add .
+[2025-10-22 09:01:10] $ 'C:\Users\liamp\AppData\Local\Programs\Git\cmd\git.exe' commit -m 'Auto update HTMLs'  # git commit
+[main cdcd63e] Auto update HTMLs
+ Committer: Liam Passi <Liamp@dorasnaturals.net>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 3 files changed, 273 insertions(+), 130 deletions(-)
+ create mode 100644 _logs/run_20251022_090001.log
+[2025-10-22 09:01:11] $ 'C:\Users\liamp\AppData\Local\Programs\Git\cmd\git.exe' push  # git push
+To https://github.com/youngfinito/mlb-site.git
+   33ba5bc..cdcd63e  main -> main
+FAILED scripts: testMatchup.py, pitcherMatchup.py, kPred.py, NRFI.py
+=== MLB Pipeline Run Finished 2025-10-22 09:01:12 ===
