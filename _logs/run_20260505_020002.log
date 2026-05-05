@@ -1,0 +1,103 @@
+=== MLB Pipeline Run Started 2026-05-05 02:00:02 ===
+SCRIPT_DIR: C:\mlbData
+PYTHON_EXE: C:\Users\liamp\AppData\Local\Programs\Python\Python313\python.exe
+REPO_PATH: C:\Users\liamp\Desktop\mlb-site
+MPLCONFIGDIR: C:\mlbData\_mplcache
+--------------------------------------------------------------------------------
+[2026-05-05 02:00:02] $ 'C:\Users\liamp\AppData\Local\Programs\Python\Python313\python.exe' update.py  # Running update.py
+C:\mlbData\update.py:18: SyntaxWarning: invalid escape sequence '\L'
+  CONN_STR = "DRIVER={ODBC Driver 17 for SQL Server};SERVER=JULIOS-DT23\LIAMPLAYGROUND;DATABASE=mlbdb;UID=sa;PWD=Parlay123"
+This is a large query, it may take a moment to complete
+
+  0%|          | 0/6 [00:00<?, ?it/s]C:\Users\liamp\AppData\Local\Programs\Python\Python313\Lib\site-packages\pybaseball\datahelpers\postprocessing.py:59: FutureWarning: errors='ignore' is deprecated and will raise in a future version. Use to_datetime without passing `errors` and catch exceptions explicitly instead
+  data_copy[column] = data_copy[column].apply(pd.to_datetime, errors='ignore', format=date_format)
+
+ 17%|█▋        | 1/6 [00:00<00:02,  2.14it/s]C:\Users\liamp\AppData\Local\Programs\Python\Python313\Lib\site-packages\pybaseball\datahelpers\postprocessing.py:59: FutureWarning: errors='ignore' is deprecated and will raise in a future version. Use to_datetime without passing `errors` and catch exceptions explicitly instead
+  data_copy[column] = data_copy[column].apply(pd.to_datetime, errors='ignore', format=date_format)
+
+ 33%|███▎      | 2/6 [00:01<00:02,  1.92it/s]C:\Users\liamp\AppData\Local\Programs\Python\Python313\Lib\site-packages\pybaseball\datahelpers\postprocessing.py:59: FutureWarning: errors='ignore' is deprecated and will raise in a future version. Use to_datetime without passing `errors` and catch exceptions explicitly instead
+  data_copy[column] = data_copy[column].apply(pd.to_datetime, errors='ignore', format=date_format)
+
+ 50%|█████     | 3/6 [00:01<00:01,  2.08it/s]C:\Users\liamp\AppData\Local\Programs\Python\Python313\Lib\site-packages\pybaseball\datahelpers\postprocessing.py:59: FutureWarning: errors='ignore' is deprecated and will raise in a future version. Use to_datetime without passing `errors` and catch exceptions explicitly instead
+  data_copy[column] = data_copy[column].apply(pd.to_datetime, errors='ignore', format=date_format)
+
+ 67%|██████▋   | 4/6 [00:02<00:01,  1.51it/s]
+ 83%|████████▎ | 5/6 [00:02<00:00,  2.15it/s]
+100%|██████████| 6/6 [00:02<00:00,  2.30it/s]
+C:\Users\liamp\AppData\Local\Programs\Python\Python313\Lib\site-packages\pybaseball\statcast.py:85: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  final_data = pd.concat(dataframe_list, axis=0).convert_dtypes(convert_string=False)
+C:\mlbData\update.py:278: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  return pd.read_sql("SELECT mlbam_id, name FROM dbo.playerlookup", conn)
+[2026-05-05 02:00:59] $ 'C:\Users\liamp\AppData\Local\Programs\Python\Python313\python.exe' testMatchup.py  # Running testMatchup.py
+Games scheduled for 2026-05-05: 15
+Gathering player lookup table. This may take a moment.
+Matchups generated: 175
+Missing IDs for 23 players. Example: J. Caglianone, S. Antonacci, D. Beavers, M. Murakami, M. Ballesteros
+Matchup data saved to: C:\mlbData\batter_vs_pitcher_auto_matchups.csv
+Matchup data also saved to: C:\mlbData\batter_matchups.csv
+Total results: 81
+[2026-05-05 02:02:30] $ 'C:\Users\liamp\AppData\Local\Programs\Python\Python313\python.exe' pitcherMatchup.py  # Running pitcherMatchup.py
+Games scheduled for 2026-05-05: 15
+Gathering player lookup table. This may take a moment.
+Pitcher-batter rows generated: 175
+Missing IDs for 23 players. Example: B. Eldridge, R. Anthony, J. Wetherholt, A. Freeland, D. Baldwin
+Pitcher matchup data saved to: C:\mlbData\pitcher_matchups.csv
+Total results: 175
+[2026-05-05 02:04:05] $ 'C:\Users\liamp\AppData\Local\Programs\Python\Python313\python.exe' weather.py  # Running weather.py
+C:\mlbData\weather.py:200: FutureWarning: Downcasting behavior in `replace` is deprecated and will be removed in a future version. To retain the old behavior, explicitly call `result.infer_objects(copy=False)`. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  train = train.replace("Missing Info", np.nan)
+C:\Users\liamp\AppData\Local\Programs\Python\Python313\Lib\site-packages\sklearn\impute\_base.py:637: UserWarning: Skipping features without any observed values: ['Temperature (F)' 'Humidity (%)' 'Wind Speed (mph)']. At least one non-missing value is needed for imputation with strategy='mean'.
+  warnings.warn(
+Games today: 15; Unique venues: 15
+[ERROR] Weather fetch failed for Citizens Bank Park (Philadelphia,US): HTTPSConnectionPool(host='api.openweathermap.org', port=443): Max retries exceeded with url: /data/2.5/weather?appid=cbc3946c0996aef7218de807242aafa0&units=imperial&q=Philadelphia%2CUS (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000209D4B9B4D0>: Failed to resolve 'api.openweathermap.org' ([Errno 11001] getaddrinfo failed)"))
+[ERROR] Weather fetch failed for Tropicana Field (St. Petersburg,US): HTTPSConnectionPool(host='api.openweathermap.org', port=443): Max retries exceeded with url: /data/2.5/weather?appid=cbc3946c0996aef7218de807242aafa0&units=imperial&q=St.+Petersburg%2CUS (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000209D4BD3390>: Failed to resolve 'api.openweathermap.org' ([Errno 11002] getaddrinfo failed)"))
+[ERROR] Weather fetch failed for T-Mobile Park (Seattle,US): HTTPSConnectionPool(host='api.openweathermap.org', port=443): Max retries exceeded with url: /data/2.5/weather?appid=cbc3946c0996aef7218de807242aafa0&units=imperial&q=Seattle%2CUS (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000209D4BD39D0>: Failed to resolve 'api.openweathermap.org' ([Errno 11002] getaddrinfo failed)"))
+[ERROR] Weather fetch failed for Busch Stadium (St. Louis,US): HTTPSConnectionPool(host='api.openweathermap.org', port=443): Max retries exceeded with url: /data/2.5/weather?appid=cbc3946c0996aef7218de807242aafa0&units=imperial&q=St.+Louis%2CUS (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000209D4BD3D90>: Failed to resolve 'api.openweathermap.org' ([Errno 11002] getaddrinfo failed)"))
+[ERROR] Weather fetch failed for Minute Maid Park (Houston,US): HTTPSConnectionPool(host='api.openweathermap.org', port=443): Max retries exceeded with url: /data/2.5/weather?appid=cbc3946c0996aef7218de807242aafa0&units=imperial&q=Houston%2CUS (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000209D4C8C190>: Failed to resolve 'api.openweathermap.org' ([Errno 11002] getaddrinfo failed)"))
+[ERROR] Weather fetch failed for Kauffman Stadium (Kansas City,US): HTTPSConnectionPool(host='api.openweathermap.org', port=443): Max retries exceeded with url: /data/2.5/weather?appid=cbc3946c0996aef7218de807242aafa0&units=imperial&q=Kansas+City%2CUS (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000209D4BD3D90>: Failed to resolve 'api.openweathermap.org' ([Errno 11002] getaddrinfo failed)"))
+[ERROR] Weather fetch failed for Coors Field (Denver,US): HTTPSConnectionPool(host='api.openweathermap.org', port=443): Max retries exceeded with url: /data/2.5/weather?appid=cbc3946c0996aef7218de807242aafa0&units=imperial&q=Denver%2CUS (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000209D4BD3890>: Failed to resolve 'api.openweathermap.org' ([Errno 11002] getaddrinfo failed)"))
+[WARN] No city mapping for venue: loanDepot Park
+[ERROR] Weather fetch failed for Oracle Park (San Francisco,US): HTTPSConnectionPool(host='api.openweathermap.org', port=443): Max retries exceeded with url: /data/2.5/weather?appid=cbc3946c0996aef7218de807242aafa0&units=imperial&q=San+Francisco%2CUS (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000209D4BD3B10>: Failed to resolve 'api.openweathermap.org' ([Errno 11002] getaddrinfo failed)"))
+[ERROR] Weather fetch failed for Chase Field (Phoenix,US): HTTPSConnectionPool(host='api.openweathermap.org', port=443): Max retries exceeded with url: /data/2.5/weather?appid=cbc3946c0996aef7218de807242aafa0&units=imperial&q=Phoenix%2CUS (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000209D4BD3110>: Failed to resolve 'api.openweathermap.org' ([Errno 11002] getaddrinfo failed)"))
+[ERROR] Weather fetch failed for Yankee Stadium (New York,US): HTTPSConnectionPool(host='api.openweathermap.org', port=443): Max retries exceeded with url: /data/2.5/weather?appid=cbc3946c0996aef7218de807242aafa0&units=imperial&q=New+York%2CUS (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000209D4BD2FD0>: Failed to resolve 'api.openweathermap.org' ([Errno 11002] getaddrinfo failed)"))
+[ERROR] Weather fetch failed for Comerica Park (Detroit,US): HTTPSConnectionPool(host='api.openweathermap.org', port=443): Max retries exceeded with url: /data/2.5/weather?appid=cbc3946c0996aef7218de807242aafa0&units=imperial&q=Detroit%2CUS (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000209D4BD2E90>: Failed to resolve 'api.openweathermap.org' ([Errno 11002] getaddrinfo failed)"))
+[ERROR] Weather fetch failed for Wrigley Field (Chicago,US): HTTPSConnectionPool(host='api.openweathermap.org', port=443): Max retries exceeded with url: /data/2.5/weather?appid=cbc3946c0996aef7218de807242aafa0&units=imperial&q=Chicago%2CUS (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000209D4BD25D0>: Failed to resolve 'api.openweathermap.org' ([Errno 11002] getaddrinfo failed)"))
+[ERROR] Weather fetch failed for Nationals Park (Washington,US): HTTPSConnectionPool(host='api.openweathermap.org', port=443): Max retries exceeded with url: /data/2.5/weather?appid=cbc3946c0996aef7218de807242aafa0&units=imperial&q=Washington%2CUS (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000209D4C8C690>: Failed to resolve 'api.openweathermap.org' ([Errno 11002] getaddrinfo failed)"))
+[ERROR] Weather fetch failed for Angel Stadium (Anaheim,US): HTTPSConnectionPool(host='api.openweathermap.org', port=443): Max retries exceeded with url: /data/2.5/weather?appid=cbc3946c0996aef7218de807242aafa0&units=imperial&q=Anaheim%2CUS (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000209D4C8CA50>: Failed to resolve 'api.openweathermap.org' ([Errno 11002] getaddrinfo failed)"))
+Weather data saved to: C:\mlbData\mlb_weather_today.csv
+[ERROR] Model fit failed: For a sparse output, all columns should be a numeric or convertible to a numeric.
+[2026-05-05 02:04:19] $ 'C:\Users\liamp\AppData\Local\Programs\Python\Python313\python.exe' kPred.py  # Running kPred.py
+kPred.csv created with 24 rows at C:\mlbData\kPred.csv
+[2026-05-05 02:04:37] $ 'C:\Users\liamp\AppData\Local\Programs\Python\Python313\python.exe' NRFI.py  # Running NRFI.py
+NRFI report generated and saved to: C:\Users\liamp\Desktop\mlb-site\nrfi.html
+[2026-05-05 02:05:01] $ 'C:\Users\liamp\AppData\Local\Programs\Python\Python313\python.exe' pitcher.py  # Running pitcher.py
+Pitchers page created at: C:\Users\liamp\Desktop\mlb-site\pitchers.html
+[2026-05-05 02:05:28] $ 'C:\Users\liamp\AppData\Local\Programs\Python\Python313\python.exe' topProps.py  # Running topProps.py
+Top props page saved to: C:\Users\liamp\Desktop\mlb-site\top_props.html
+[2026-05-05 02:05:29] $ 'C:\Users\liamp\AppData\Local\Programs\Python\Python313\python.exe' slate.py  # Running slate.py
+Slate page generated successfully.
+[2026-05-05 02:05:30] $ 'C:\Users\liamp\AppData\Local\Programs\Python\Python313\python.exe' index_page.py  # Running index_page.py
+✅ HTML saved to C:\Users\liamp\Desktop\mlb-site\index.html
+--------------------------------------------------------------------------------
+Pushing updated HTML files to GitHub Pages...
+[2026-05-05 02:05:53] $ 'C:\Users\liamp\AppData\Local\Programs\Git\cmd\git.exe' add .  # git add .
+[2026-05-05 02:05:53] $ 'C:\Users\liamp\AppData\Local\Programs\Git\cmd\git.exe' commit -m 'Auto update HTMLs'  # git commit
+[main 09d112de] Auto update HTMLs
+ Committer: Liam Passi <Liamp@dorasnaturals.net>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 6 files changed, 4348 insertions(+), 4533 deletions(-)
+ create mode 100644 _logs/run_20260505_020002.log
+[2026-05-05 02:05:54] $ 'C:\Users\liamp\AppData\Local\Programs\Git\cmd\git.exe' push  # git push
+To https://github.com/youngfinito/mlb-site.git
+   93711cc8..09d112de  main -> main
+=== MLB Pipeline Run Finished 2026-05-05 02:05:55 ===
