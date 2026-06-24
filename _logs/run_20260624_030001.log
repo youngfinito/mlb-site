@@ -1,0 +1,69 @@
+=== MLB Pipeline Run Started 2026-06-24 03:00:01 ===
+SCRIPT_DIR: C:\mlbData
+PYTHON_EXE: C:\Users\liamp\AppData\Local\Programs\Python\Python313\python.exe
+REPO_PATH: C:\Users\liamp\Desktop\mlb-site
+MPLCONFIGDIR: C:\mlbData\_mplcache
+--------------------------------------------------------------------------------
+[2026-06-24 03:00:01] $ 'C:\Users\liamp\AppData\Local\Programs\Python\Python313\python.exe' update.py  # Running update.py
+C:\mlbData\update.py:18: SyntaxWarning: invalid escape sequence '\L'
+  CONN_STR = "DRIVER={ODBC Driver 17 for SQL Server};SERVER=JULIOS-DT23\LIAMPLAYGROUND;DATABASE=mlbdb;UID=sa;PWD=Parlay123"
+[2026-06-24 03:00:05] $ 'C:\Users\liamp\AppData\Local\Programs\Python\Python313\python.exe' testMatchup.py  # Running testMatchup.py
+Games scheduled for 2026-06-24: 15
+Gathering player lookup table. This may take a moment.
+Matchups generated: 224
+Missing IDs for 39 players. Example: G. Rincones, A. Freeland, L. Keaschall, A. Osuna, C. Simpson
+Matchup data saved to: C:\mlbData\batter_vs_pitcher_auto_matchups.csv
+Matchup data also saved to: C:\mlbData\batter_matchups.csv
+Total results: 112
+[2026-06-24 03:00:35] $ 'C:\Users\liamp\AppData\Local\Programs\Python\Python313\python.exe' pitcherMatchup.py  # Running pitcherMatchup.py
+Games scheduled for 2026-06-24: 15
+Gathering player lookup table. This may take a moment.
+Pitcher-batter rows generated: 224
+Missing IDs for 39 players. Example: R. Delgado, R. Duran, Blaze Jordan, C. Montgomery, G. Rincones
+Pitcher matchup data saved to: C:\mlbData\pitcher_matchups.csv
+Total results: 224
+[2026-06-24 03:01:10] $ 'C:\Users\liamp\AppData\Local\Programs\Python\Python313\python.exe' weather.py  # Running weather.py
+C:\mlbData\weather.py:200: FutureWarning: Downcasting behavior in `replace` is deprecated and will be removed in a future version. To retain the old behavior, explicitly call `result.infer_objects(copy=False)`. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  train = train.replace("Missing Info", np.nan)
+Games today: 15; Unique venues: 15
+[WARN] No city mapping for venue: loanDepot Park
+Weather data saved to: C:\mlbData\mlb_weather_today.csv
+Prediction file saved to: C:\mlbData\mlb_high_scoring_predictions.csv
+[2026-06-24 03:01:16] $ 'C:\Users\liamp\AppData\Local\Programs\Python\Python313\python.exe' kPred.py  # Running kPred.py
+Gathering player lookup table. This may take a moment.
+kPred.csv created with 30 rows at C:\mlbData\kPred.csv
+[2026-06-24 03:01:38] $ 'C:\Users\liamp\AppData\Local\Programs\Python\Python313\python.exe' NRFI.py  # Running NRFI.py
+NRFI report generated and saved to: C:\Users\liamp\Desktop\mlb-site\nrfi.html
+[2026-06-24 03:02:05] $ 'C:\Users\liamp\AppData\Local\Programs\Python\Python313\python.exe' pitcher.py  # Running pitcher.py
+Pitchers page created at: C:\Users\liamp\Desktop\mlb-site\pitchers.html
+[2026-06-24 03:02:36] $ 'C:\Users\liamp\AppData\Local\Programs\Python\Python313\python.exe' topProps.py  # Running topProps.py
+Top props page saved to: C:\Users\liamp\Desktop\mlb-site\top_props.html
+[2026-06-24 03:02:37] $ 'C:\Users\liamp\AppData\Local\Programs\Python\Python313\python.exe' slate.py  # Running slate.py
+Slate page generated successfully.
+[2026-06-24 03:02:38] $ 'C:\Users\liamp\AppData\Local\Programs\Python\Python313\python.exe' index_page.py  # Running index_page.py
+✅ HTML saved to C:\Users\liamp\Desktop\mlb-site\index.html
+--------------------------------------------------------------------------------
+Pushing updated HTML files to GitHub Pages...
+[2026-06-24 03:03:04] $ 'C:\Users\liamp\AppData\Local\Programs\Git\cmd\git.exe' add .  # git add .
+[2026-06-24 03:03:05] $ 'C:\Users\liamp\AppData\Local\Programs\Git\cmd\git.exe' commit -m 'Auto update HTMLs'  # git commit
+[main bf0d4ea7] Auto update HTMLs
+ Committer: Liam Passi <Liamp@dorasnaturals.net>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 7 files changed, 5603 insertions(+), 5515 deletions(-)
+ create mode 100644 _logs/run_20260624_020001.log
+ create mode 100644 _logs/run_20260624_030001.log
+[2026-06-24 03:03:05] $ 'C:\Users\liamp\AppData\Local\Programs\Git\cmd\git.exe' push  # git push
+To https://github.com/youngfinito/mlb-site.git
+   18040c21..bf0d4ea7  main -> main
+FAILED scripts: update.py
+=== MLB Pipeline Run Finished 2026-06-24 03:03:07 ===
