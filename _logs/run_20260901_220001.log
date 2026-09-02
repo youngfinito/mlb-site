@@ -1,0 +1,253 @@
+=== MLB Pipeline Run Started 2026-09-01 22:00:01 ===
+SCRIPT_DIR: C:\mlbData
+PYTHON_EXE: C:\Users\liamp\AppData\Local\Programs\Python\Python313\python.exe
+REPO_PATH: C:\Users\liamp\Desktop\mlb-site
+MPLCONFIGDIR: C:\mlbData\_mplcache
+--------------------------------------------------------------------------------
+[2026-09-01 22:00:01] $ 'C:\Users\liamp\AppData\Local\Programs\Python\Python313\python.exe' update.py  # Running update.py
+C:\mlbData\update.py:18: SyntaxWarning: invalid escape sequence '\L'
+  CONN_STR = "DRIVER={ODBC Driver 17 for SQL Server};SERVER=JULIOS-DT23\LIAMPLAYGROUND;DATABASE=mlbdb;UID=sa;PWD=Parlay123"
+This is a large query, it may take a moment to complete
+
+  0%|          | 0/6 [00:00<?, ?it/s]
+  0%|          | 0/6 [00:12<?, ?it/s]
+This is a large query, it may take a moment to complete
+
+  0%|          | 0/6 [00:00<?, ?it/s]
+  0%|          | 0/6 [00:12<?, ?it/s]
+This is a large query, it may take a moment to complete
+
+  0%|          | 0/6 [00:00<?, ?it/s]
+  0%|          | 0/6 [00:12<?, ?it/s]
+[2026-09-01 22:00:55] $ 'C:\Users\liamp\AppData\Local\Programs\Python\Python313\python.exe' testMatchup.py  # Running testMatchup.py
+Games scheduled for 2026-09-01: 15
+Gathering player lookup table. This may take a moment.
+Gathering player lookup table. This may take a moment.
+Gathering player lookup table. This may take a moment.
+Gathering player lookup table. This may take a moment.
+Gathering player lookup table. This may take a moment.
+Gathering player lookup table. This may take a moment.
+Gathering player lookup table. This may take a moment.
+Gathering player lookup table. This may take a moment.
+Gathering player lookup table. This may take a moment.
+Gathering player lookup table. This may take a moment.
+Gathering player lookup table. This may take a moment.
+Gathering player lookup table. This may take a moment.
+Gathering player lookup table. This may take a moment.
+Gathering player lookup table. This may take a moment.
+Gathering player lookup table. This may take a moment.
+Gathering player lookup table. This may take a moment.
+Gathering player lookup table. This may take a moment.
+Gathering player lookup table. This may take a moment.
+Gathering player lookup table. This may take a moment.
+Gathering player lookup table. This may take a moment.
+Gathering player lookup table. This may take a moment.
+Gathering player lookup table. This may take a moment.
+Gathering player lookup table. This may take a moment.
+Gathering player lookup table. This may take a moment.
+Gathering player lookup table. This may take a moment.
+Gathering player lookup table. This may take a moment.
+Gathering player lookup table. This may take a moment.
+Gathering player lookup table. This may take a moment.
+Gathering player lookup table. This may take a moment.
+Gathering player lookup table. This may take a moment.
+Gathering player lookup table. This may take a moment.
+Gathering player lookup table. This may take a moment.
+Gathering player lookup table. This may take a moment.
+Gathering player lookup table. This may take a moment.
+Gathering player lookup table. This may take a moment.
+Gathering player lookup table. This may take a moment.
+Gathering player lookup table. This may take a moment.
+Gathering player lookup table. This may take a moment.
+Gathering player lookup table. This may take a moment.
+Gathering player lookup table. This may take a moment.
+Gathering player lookup table. This may take a moment.
+Gathering player lookup table. This may take a moment.
+Gathering player lookup table. This may take a moment.
+Gathering player lookup table. This may take a moment.
+Gathering player lookup table. This may take a moment.
+Matchups generated: 225
+Missing IDs for 45 players. Example: D. Cavanaugh, R. Waldschmidt, K. Culpepper, S. Basallo, M. Murakami
+Matchup data saved to: C:\mlbData\batter_vs_pitcher_auto_matchups.csv
+Matchup data also saved to: C:\mlbData\batter_matchups.csv
+Total results: 122
+[2026-09-01 22:01:46] $ 'C:\Users\liamp\AppData\Local\Programs\Python\Python313\python.exe' pitcherMatchup.py  # Running pitcherMatchup.py
+Games scheduled for 2026-09-01: 15
+Gathering player lookup table. This may take a moment.
+Gathering player lookup table. This may take a moment.
+Gathering player lookup table. This may take a moment.
+Gathering player lookup table. This may take a moment.
+Gathering player lookup table. This may take a moment.
+Gathering player lookup table. This may take a moment.
+Gathering player lookup table. This may take a moment.
+Gathering player lookup table. This may take a moment.
+Gathering player lookup table. This may take a moment.
+Gathering player lookup table. This may take a moment.
+Gathering player lookup table. This may take a moment.
+Gathering player lookup table. This may take a moment.
+Gathering player lookup table. This may take a moment.
+Gathering player lookup table. This may take a moment.
+Gathering player lookup table. This may take a moment.
+Gathering player lookup table. This may take a moment.
+Gathering player lookup table. This may take a moment.
+Gathering player lookup table. This may take a moment.
+Gathering player lookup table. This may take a moment.
+Gathering player lookup table. This may take a moment.
+Gathering player lookup table. This may take a moment.
+Gathering player lookup table. This may take a moment.
+Gathering player lookup table. This may take a moment.
+Gathering player lookup table. This may take a moment.
+Gathering player lookup table. This may take a moment.
+Gathering player lookup table. This may take a moment.
+Gathering player lookup table. This may take a moment.
+Gathering player lookup table. This may take a moment.
+Gathering player lookup table. This may take a moment.
+Gathering player lookup table. This may take a moment.
+Gathering player lookup table. This may take a moment.
+Gathering player lookup table. This may take a moment.
+Gathering player lookup table. This may take a moment.
+Gathering player lookup table. This may take a moment.
+Gathering player lookup table. This may take a moment.
+Gathering player lookup table. This may take a moment.
+Gathering player lookup table. This may take a moment.
+Gathering player lookup table. This may take a moment.
+Gathering player lookup table. This may take a moment.
+Gathering player lookup table. This may take a moment.
+Gathering player lookup table. This may take a moment.
+Gathering player lookup table. This may take a moment.
+Gathering player lookup table. This may take a moment.
+Gathering player lookup table. This may take a moment.
+Gathering player lookup table. This may take a moment.
+Pitcher-batter rows generated: 225
+Missing IDs for 45 players. Example: C. Meidroth, D. Beavers, C. Simpson, S. Antonacci, M. Ballesteros
+Pitcher matchup data saved to: C:\mlbData\pitcher_matchups.csv
+Total results: 225
+[2026-09-01 22:02:44] $ 'C:\Users\liamp\AppData\Local\Programs\Python\Python313\python.exe' weather.py  # Running weather.py
+C:\mlbData\weather.py:200: FutureWarning: Downcasting behavior in `replace` is deprecated and will be removed in a future version. To retain the old behavior, explicitly call `result.infer_objects(copy=False)`. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  train = train.replace("Missing Info", np.nan)
+C:\Users\liamp\AppData\Local\Programs\Python\Python313\Lib\site-packages\sklearn\impute\_base.py:637: UserWarning: Skipping features without any observed values: ['Temperature (F)' 'Humidity (%)' 'Wind Speed (mph)']. At least one non-missing value is needed for imputation with strategy='mean'.
+  warnings.warn(
+Games today: 15; Unique venues: 15
+[ERROR] Weather fetch failed for Globe Life Field (Arlington,US): HTTPSConnectionPool(host='api.openweathermap.org', port=443): Max retries exceeded with url: /data/2.5/weather?appid=cbc3946c0996aef7218de807242aafa0&units=imperial&q=Arlington%2CUS (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000020E3E84B4D0>: Failed to resolve 'api.openweathermap.org' ([Errno 11002] getaddrinfo failed)"))
+[ERROR] Weather fetch failed for Progressive Field (Cleveland,US): HTTPSConnectionPool(host='api.openweathermap.org', port=443): Max retries exceeded with url: /data/2.5/weather?appid=cbc3946c0996aef7218de807242aafa0&units=imperial&q=Cleveland%2CUS (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000020E3E883390>: Failed to resolve 'api.openweathermap.org' ([Errno 11002] getaddrinfo failed)"))
+[ERROR] Weather fetch failed for Nationals Park (Washington,US): HTTPSConnectionPool(host='api.openweathermap.org', port=443): Max retries exceeded with url: /data/2.5/weather?appid=cbc3946c0996aef7218de807242aafa0&units=imperial&q=Washington%2CUS (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000020E3E8839D0>: Failed to resolve 'api.openweathermap.org' ([Errno 11002] getaddrinfo failed)"))
+[ERROR] Weather fetch failed for Wrigley Field (Chicago,US): HTTPSConnectionPool(host='api.openweathermap.org', port=443): Max retries exceeded with url: /data/2.5/weather?appid=cbc3946c0996aef7218de807242aafa0&units=imperial&q=Chicago%2CUS (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000020E3E883D90>: Failed to resolve 'api.openweathermap.org' ([Errno 11002] getaddrinfo failed)"))
+[ERROR] Weather fetch failed for Dodger Stadium (Los Angeles,US): HTTPSConnectionPool(host='api.openweathermap.org', port=443): Max retries exceeded with url: /data/2.5/weather?appid=cbc3946c0996aef7218de807242aafa0&units=imperial&q=Los+Angeles%2CUS (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000020E3E938190>: Failed to resolve 'api.openweathermap.org' ([Errno 11002] getaddrinfo failed)"))
+[ERROR] Weather fetch failed for PNC Park (Pittsburgh,US): HTTPSConnectionPool(host='api.openweathermap.org', port=443): Max retries exceeded with url: /data/2.5/weather?appid=cbc3946c0996aef7218de807242aafa0&units=imperial&q=Pittsburgh%2CUS (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000020E3E883D90>: Failed to resolve 'api.openweathermap.org' ([Errno 11002] getaddrinfo failed)"))
+[ERROR] Weather fetch failed for Fenway Park (Boston,US): HTTPSConnectionPool(host='api.openweathermap.org', port=443): Max retries exceeded with url: /data/2.5/weather?appid=cbc3946c0996aef7218de807242aafa0&units=imperial&q=Boston%2CUS (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000020E3E883890>: Failed to resolve 'api.openweathermap.org' ([Errno 11002] getaddrinfo failed)"))
+[ERROR] Weather fetch failed for Kauffman Stadium (Kansas City,US): HTTPSConnectionPool(host='api.openweathermap.org', port=443): Max retries exceeded with url: /data/2.5/weather?appid=cbc3946c0996aef7218de807242aafa0&units=imperial&q=Kansas+City%2CUS (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000020E3E883B10>: Failed to resolve 'api.openweathermap.org' ([Errno 11002] getaddrinfo failed)"))
+[ERROR] Weather fetch failed for Tropicana Field (St. Petersburg,US): HTTPSConnectionPool(host='api.openweathermap.org', port=443): Max retries exceeded with url: /data/2.5/weather?appid=cbc3946c0996aef7218de807242aafa0&units=imperial&q=St.+Petersburg%2CUS (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000020E3E883110>: Failed to resolve 'api.openweathermap.org' ([Errno 11002] getaddrinfo failed)"))
+[ERROR] Weather fetch failed for Coors Field (Denver,US): HTTPSConnectionPool(host='api.openweathermap.org', port=443): Max retries exceeded with url: /data/2.5/weather?appid=cbc3946c0996aef7218de807242aafa0&units=imperial&q=Denver%2CUS (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000020E3E882FD0>: Failed to resolve 'api.openweathermap.org' ([Errno 11002] getaddrinfo failed)"))
+[ERROR] Weather fetch failed for Great American Ball Park (Cincinnati,US): HTTPSConnectionPool(host='api.openweathermap.org', port=443): Max retries exceeded with url: /data/2.5/weather?appid=cbc3946c0996aef7218de807242aafa0&units=imperial&q=Cincinnati%2CUS (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000020E3E882E90>: Failed to resolve 'api.openweathermap.org' ([Errno 11002] getaddrinfo failed)"))
+[ERROR] Weather fetch failed for Chase Field (Phoenix,US): HTTPSConnectionPool(host='api.openweathermap.org', port=443): Max retries exceeded with url: /data/2.5/weather?appid=cbc3946c0996aef7218de807242aafa0&units=imperial&q=Phoenix%2CUS (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000020E3E8825D0>: Failed to resolve 'api.openweathermap.org' ([Errno 11002] getaddrinfo failed)"))
+[ERROR] Weather fetch failed for Target Field (Minneapolis,US): HTTPSConnectionPool(host='api.openweathermap.org', port=443): Max retries exceeded with url: /data/2.5/weather?appid=cbc3946c0996aef7218de807242aafa0&units=imperial&q=Minneapolis%2CUS (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000020E3E938690>: Failed to resolve 'api.openweathermap.org' ([Errno 11002] getaddrinfo failed)"))
+[ERROR] Weather fetch failed for Minute Maid Park (Houston,US): HTTPSConnectionPool(host='api.openweathermap.org', port=443): Max retries exceeded with url: /data/2.5/weather?appid=cbc3946c0996aef7218de807242aafa0&units=imperial&q=Houston%2CUS (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000020E3E938A50>: Failed to resolve 'api.openweathermap.org' ([Errno 11002] getaddrinfo failed)"))
+[ERROR] Weather fetch failed for Angel Stadium (Anaheim,US): HTTPSConnectionPool(host='api.openweathermap.org', port=443): Max retries exceeded with url: /data/2.5/weather?appid=cbc3946c0996aef7218de807242aafa0&units=imperial&q=Anaheim%2CUS (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000020E3E938E10>: Failed to resolve 'api.openweathermap.org' ([Errno 11002] getaddrinfo failed)"))
+Weather data saved to: C:\mlbData\mlb_weather_today.csv
+[ERROR] Model fit failed: For a sparse output, all columns should be a numeric or convertible to a numeric.
+[2026-09-01 22:02:57] $ 'C:\Users\liamp\AppData\Local\Programs\Python\Python313\python.exe' kPred.py  # Running kPred.py
+Gathering player lookup table. This may take a moment.
+Gathering player lookup table. This may take a moment.
+Missing batter IDs for Guardians: ['C. DeLauter', 'T. Bazzana']
+Gathering player lookup table. This may take a moment.
+Gathering player lookup table. This may take a moment.
+Missing batter IDs for Blue Jays: ['B. Bateman', 'K. Okamoto']
+Gathering player lookup table. This may take a moment.
+Missing batter IDs for Reds: ['H. Rodriguez']
+Gathering player lookup table. This may take a moment.
+Missing batter IDs for Pirates: ['J. Gonzalez']
+Gathering player lookup table. This may take a moment.
+Gathering player lookup table. This may take a moment.
+Gathering player lookup table. This may take a moment.
+Gathering player lookup table. This may take a moment.
+Missing batter IDs for Giants: ['B. Eldridge', 'O. Basabe', 'D. Cavanaugh', 'C. Koss']
+Gathering player lookup table. This may take a moment.
+Missing batter IDs for Rays: ['C. Simpson']
+Gathering player lookup table. This may take a moment.
+Gathering player lookup table. This may take a moment.
+Missing batter IDs for Mets: ['A.J. Ewing', 'N. Morabito']
+Gathering player lookup table. This may take a moment.
+Missing batter IDs for Red Sox: ['R. Anthony']
+Gathering player lookup table. This may take a moment.
+Missing batter IDs for Mariners: ['L. Montes']
+Gathering player lookup table. This may take a moment.
+Gathering player lookup table. This may take a moment.
+Missing batter IDs for Nationals: ['Y. Morales', 'A. Ortiz']
+Gathering player lookup table. This may take a moment.
+Gathering player lookup table. This may take a moment.
+Gathering player lookup table. This may take a moment.
+Missing batter IDs for Braves: ['D. Baldwin', 'Ronald Acuna', 'M. Harris']
+Gathering player lookup table. This may take a moment.
+Gathering player lookup table. This may take a moment.
+Missing batter IDs for Royals: ['C. Jensen', 'J. Caglianone']
+Gathering player lookup table. This may take a moment.
+Missing batter IDs for Marlins: ['H. Hernandez']
+Gathering player lookup table. This may take a moment.
+Gathering player lookup table. This may take a moment.
+Gathering player lookup table. This may take a moment.
+Missing batter IDs for Twins: ['L. Keaschall', 'K. Culpepper', 'W. Jenkins']
+Gathering player lookup table. This may take a moment.
+Missing batter IDs for Tigers: ['K. McGonigle']
+Gathering player lookup table. This may take a moment.
+Missing batter IDs for Cubs: ['BJ Murray']
+Gathering player lookup table. This may take a moment.
+Missing batter IDs for Athletics: ['D. Clarke']
+Gathering player lookup table. This may take a moment.
+Gathering player lookup table. This may take a moment.
+Gathering player lookup table. This may take a moment.
+Gathering player lookup table. This may take a moment.
+Gathering player lookup table. This may take a moment.
+Missing batter IDs for White Sox: ['S. Antonacci', 'M. Murakami', 'C. Montgomery', 'T. Peters', 'C. Meidroth']
+Gathering player lookup table. This may take a moment.
+Gathering player lookup table. This may take a moment.
+Missing batter IDs for Orioles: ['D. Beavers', 'S. Basallo']
+Gathering player lookup table. This may take a moment.
+Gathering player lookup table. This may take a moment.
+Missing batter IDs for Angels: ['M. Ballesteros', 'C. Moore']
+Gathering player lookup table. This may take a moment.
+Missing batter IDs for Yankees: ['S. Jones']
+Gathering player lookup table. This may take a moment.
+Gathering player lookup table. This may take a moment.
+Missing batter IDs for Diamondbacks: ['J. Lawlar', 'R. Waldschmidt']
+Gathering player lookup table. This may take a moment.
+Missing batter IDs for Dodgers: ['A. Freeland']
+Gathering player lookup table. This may take a moment.
+Gathering player lookup table. This may take a moment.
+Gathering player lookup table. This may take a moment.
+Missing batter IDs for Cardinals: ['Joshua Baez', 'Leo Bernal', 'N. Church']
+kPred.csv created with 30 rows at C:\mlbData\kPred.csv
+[2026-09-01 22:03:40] $ 'C:\Users\liamp\AppData\Local\Programs\Python\Python313\python.exe' NRFI.py  # Running NRFI.py
+C:\mlbData\NRFI.py:284: MatplotlibDeprecationWarning: The get_cmap function was deprecated in Matplotlib 3.7 and will be removed in 3.11. Use ``matplotlib.colormaps[name]`` or ``matplotlib.colormaps.get_cmap()`` or ``pyplot.get_cmap()`` instead.
+  colors = cm.get_cmap('RdYlGn_r')(np.linspace(0, 1, len(results_df)))
+NRFI report generated and saved to: C:\Users\liamp\Desktop\mlb-site\nrfi.html
+[2026-09-01 22:04:15] $ 'C:\Users\liamp\AppData\Local\Programs\Python\Python313\python.exe' pitcher.py  # Running pitcher.py
+Pitchers page created at: C:\Users\liamp\Desktop\mlb-site\pitchers.html
+[2026-09-01 22:04:55] $ 'C:\Users\liamp\AppData\Local\Programs\Python\Python313\python.exe' topProps.py  # Running topProps.py
+Top props page saved to: C:\Users\liamp\Desktop\mlb-site\top_props.html
+[2026-09-01 22:04:56] $ 'C:\Users\liamp\AppData\Local\Programs\Python\Python313\python.exe' slate.py  # Running slate.py
+Slate page generated successfully.
+[2026-09-01 22:04:57] $ 'C:\Users\liamp\AppData\Local\Programs\Python\Python313\python.exe' index_page.py  # Running index_page.py
+✅ HTML saved to C:\Users\liamp\Desktop\mlb-site\index.html
+--------------------------------------------------------------------------------
+Pushing updated HTML files to GitHub Pages...
+[2026-09-01 22:05:31] $ 'C:\Users\liamp\AppData\Local\Programs\Git\cmd\git.exe' add .  # git add .
+[2026-09-01 22:05:32] $ 'C:\Users\liamp\AppData\Local\Programs\Git\cmd\git.exe' commit -m 'Auto update HTMLs'  # git commit
+[main 1d123b88] Auto update HTMLs
+ Committer: Liam Passi <Liamp@dorasnaturals.net>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 6 files changed, 5718 insertions(+), 5455 deletions(-)
+ create mode 100644 _logs/run_20260901_220001.log
+[2026-09-01 22:05:32] $ 'C:\Users\liamp\AppData\Local\Programs\Git\cmd\git.exe' push  # git push
+fatal: unable to access 'https://github.com/youngfinito/mlb-site.git/': Could not resolve host: github.com
+FAILED scripts: update.py
+=== MLB Pipeline Run Finished 2026-09-01 22:05:44 ===
